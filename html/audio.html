@@ -124,28 +124,24 @@
                 <div class="block_content">
                  
                   <p>
-                    Элемент <span class="tag">&lt;audio&gt;</span> (от англ.
-                    <i>audio</i>&nbsp;— звук) добавляет, воспроизводит и
-                    управляет настройками аудиозаписи на веб-странице. Путь к
-                    файлу задаётся через атрибут
-                    <a href="audio\src.html">src</a> или вложенный элемент
-                    <a href="source.html">&lt;source&gt;</a>. Внутри контейнера
-                    <span class="tag">&lt;audio&gt;</span> можно написать текст,
-                    который будет выводиться в браузерах, не работающих с этим
-                    элементом.
+                  <span class="tag">&lt;Audio&gt;</span>  էլեմենտն ավելացնում, նվագում և կառավարում է աուդիո ձայնագրման պարամետրերը վեբ էջում: 
+                    Ֆայլի ուղին նշվում է
+                    <a href="audio\src.html">src</a> հատկանիշի կամ տեղադրված 
+                    <a href="source.html">&lt;source&gt;</a>տարրի միջոցով: 
+                    <span class="tag">&lt;Audio&gt;</span> տարրի ներսում կարող եք գրել տեքստ, որը կցուցադրվի այս տարրի հետ չաշխատող զննարկիչներում:
                   </p>
                   <p>
-                    Список поддерживаемых браузерами кодеков приведён в табл. 1.
+                    Բրաուզերների կողմից աջակցվող կոդեկների ցանկը տրված է աղյուսակ 1-ում:
                   </p>
                   <table
                     class="data browser"
                     style="margin: auto auto 1em; width: 90%"
                   >
                     <caption>
-                      Табл. 1. Кодеки и браузеры
+                      Աղյուսակ 1. Կոդեկներ և բրաուզերներ
                     </caption>
                     <tr class="br">
-                      <td class="browser" style="text-align: left">Кодек</td>
+                      <td class="browser" style="text-align: left">Կոդեկ</td>
                       <td>
                         <span class="ie" title="Internet Explorer"></span>
                       </td>
@@ -193,10 +189,8 @@
                     </tr>
                   </table>
                   <p>
-                    Для универсального воспроизведения в указанных браузерах
-                    аудио кодируют с помощью разных кодеков и добавляют файлы
-                    одновременно через элемент
-                    <a href="source.html">&lt;source&gt;</a>.
+                    Այս բրաուզերներում համընդհանուր նվագարկելու համար աուդիո կոդավորվում է ՝ օգտագործելով տարբեր կոդեկներ, և ֆայլերը միաժամանակ ավելացվում են 
+                    <a href="source.html">&lt;source&gt;</a> տարրի միջոցով:
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -208,9 +202,9 @@
                       <div class="field-item even">
                         <pre
                           class="fullwidth"
-                        ><code data-language="html">&lt;audio src=&quot;&lt;адрес&gt;&quot;&gt;&lt;/audio&gt;
+                        ><code data-language="html">&lt;audio src=&quot;&lt;հասցե&gt;&quot;&gt;&lt;/audio&gt;
 &lt;audio&gt;
- &lt;source src=&quot;&lt;адрес&gt;&quot;&gt;
+ &lt;source src=&quot;&lt;հասցե&gt;&quot;&gt;
 &lt;/audio&gt;</code></pre>
                       </div>
                     </div>
@@ -234,24 +228,23 @@
                         <dl class="param2">
                           <dt><a href="audio\autoplay.html">autoplay</a></dt>
                           <dd>
-                            Звук начинает играть сразу после загрузки страницы.
+                            Ձայնը սկսում է նվագել հենց էջը բացվում է:
                           </dd>
                           <dt><a href="audio\controls.html">controls</a></dt>
-                          <dd>Добавляет панель управления к аудиофайлу.</dd>
+                          <dd>Աուդիո ֆայլին ավելացնում է կառավարման գոտի:
+                          </dd>
                           <dt><a href="audio\loop.html">loop</a></dt>
                           <dd>
-                            Повторяет воспроизведение звука с начала после его
-                            завершения.
+                            Կրկնում է ձայնը սկզբից այն ավարտելուց հետո:
                           </dd>
                           <dt><a href="audio\muted.html">muted</a></dt>
-                          <dd>Отключает звук при воспроизведении музыки.</dd>
+                          <dd>Երաժշտություն նվագելիս ձայնն անջատվում է:</dd>
                           <dt><a href="audio\preload.html">preload</a></dt>
                           <dd>
-                            Используется для предварительной загрузки аудиофайла
-                            или его данных вместе с загрузкой веб-страницы.
+                            Օգտագործվում է աուդիո ֆայլը կամ դրա տվյալները նախապես բացվելու համար ՝ համացանցային էջ բացելու հետ միասին:
                           </dd>
                           <dt><a href="audio\src.html">src</a></dt>
-                          <dd>Указывает путь к воспроизводимому файлу.</dd>
+                          <dd>Նշում է նվագարկվող ֆայլի ուղին:</dd>
                         </dl>
                       </div>
                     </div>
@@ -278,8 +271,7 @@
                           &lt;/html&gt;</w-example
                         >
                         <p>
-                          Результат примера в браузере IE показан на
-                          рис.&nbsp;1.
+                          IE բրաուզերում օրինակի արդյունքը ներկայացված է Նկար 1-ում:
                         </p>
                         <p class="fig">
                           <img
@@ -290,7 +282,7 @@
                           />
                         </p>
                         <p class="figsign">
-                          Рис. 1. Воспроизведение аудиофайла
+                          Նկար: 1. Աուդիո ֆայլի նվագելը
                         </p>
                       </div>
                     </div>
@@ -298,15 +290,11 @@
                   <div
                     class="field field-name-field-html-note field-type-text-long field-label-above"
                   >
-                    <h2 class="block_title" id="field_html_note">Примечание</h2>
+                    <h2 class="block_title" id="field_html_note">Նշում</h2>
                     <div class="field-items">
                       <div class="field-item even">
                         <p>
-                          Управление воспроизведением аудио различается между
-                          браузерами по своему виду, но основные элементы
-                          совпадают. Это кнопка воспроизведения/паузы, длина
-                          трека, прошедшее и суммарное время звучания, а также
-                          уровень громкости.
+                          Աուդիո նվագարկման կարգավորումները տարբերվում են բրաուզերներ միջև, բայց հիմնական տարրերը նույնն են: Դրանք են `նվագարկման / դադարեցման կոճակը, ուղու երկարությունը, անցած և ընդհանուր խաղաժամանակը և ձայնի մակարդակը:
                         </p>
                       </div>
                     </div>
@@ -340,7 +328,7 @@
                               >
                             </td>
                             <td>
-                              <span class="spec-Living">Живой стандарт</span>
+                              <span class="spec-Living">Թարմացվող ստանդարտ</span>
                             </td>
                           </tr>
                           <tr>
@@ -353,7 +341,7 @@
                                 >HTML5</a
                               >
                             </td>
-                            <td><span class="spec-REC">Рекомендация</span></td>
+                            <td><span class="spec-REC">Խորհուրդ է տրվում</span></td>
                           </tr>
                         </tbody>
                       </table>
@@ -415,7 +403,7 @@
                     <div class="field-items">
                       <b-tabs type="is-boxed"
                         ><b-tab-item
-                          label="Настольные"
+                          label="Համակարգիչ"
                           icon="icon-desktop"
                           icon-pack="icon"
                           ><table class="data browser">
@@ -442,7 +430,7 @@
                             </tr>
                           </table></b-tab-item
                         ><b-tab-item
-                          label="Мобильные"
+                          label="Բջջային"
                           icon="icon-mobile"
                           icon-pack="icon"
                           ><table class="data browser">

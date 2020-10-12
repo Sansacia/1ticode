@@ -124,36 +124,29 @@
                 <div class="block_content">
                   
                   <p>
-                    Элемент <span class="tag">&lt;article&gt;</span> (от англ.
-                    <i>article</i>&nbsp;— статья) представляет собой независимый
-                    фрагмент веб-страницы и, как правило, включает «шапку»,
-                    основное содержимое и «подвал», в которых располагаются
-                    такие части, как заголовок, текст, имя автора, дата
-                    публикации, метки, рейтинг статьи и др.
+                    <span class="tag">&lt;Article&gt;</span> էլեմենտը վեբ էջի անկախ կտոր է և սովորաբար պարունակում է վերնագիր, մարմնի բովանդակություն և տողատակ, որը պարունակում է մասեր, ինչպիսիք են վերնագիրը, տեքստը, հեղինակի անունը, հրապարակման ամսաթիվը, պիտակները, հոդվածի գնահատումը և այլն: <span class="tag">&lt;Article&gt;</span>-ը սովորաբար օգտագործվում է կայքի հոդվածների, բլոգի և ֆորումի հաղորդագրությունների, մեկնաբանությունների համար:
                     <span class="tag">&lt;article&gt;</span> обычно применяется
                     для статей сайта, сообщений блога и форума, комментариев.
                   </p>
                   <p>
-                    Внутри <span class="tag">&lt;article&gt;</span> запрещено
-                    использовать элемент <a href="main.html">&lt;main&gt;</a>.
+                    Արգելվում է <span class="tag">&lt;article&gt;</span>-ի ներսում օգտագործել <a href="main.html">&lt;main&gt;</a> տարրը:
                   </p>
                   <p>
-                    Каждый элемент
-                    <span class="tag">&lt;article&gt;</span> обязательно должен
-                    содержать заголовок через
+                    Յուրաքանչյուր 
+                    <span class="tag">&lt;article&gt;</span> оտարր պետք է պարունակի վերնագիր 
                     <span class="tag">&lt;h1&gt;</span>,…,<span class="tag"
                       >&lt;h6&gt;</span
-                    >. Минимальная структура элементов продемонстрирована ниже.
+                    >: Ստորև ներկայացված է տարրերի նվազագույն կառուցվածքը:
                   </p>
                   <pre><code data-language="html">&lt;article&gt;
-  &lt;h1&gt;Заголовок&lt;/h1&gt;
-  &lt;p&gt;Текст статьи&lt;/p&gt;
+  &lt;h1&gt;Վերնագիր&lt;/h1&gt;
+  &lt;p&gt;Հոդվածի տեքստը&lt;/p&gt;
 &lt;/article&gt;</code></pre>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
                   >
                     <h2 class="block_title" id="field_html_syntax">
-                      Синтаксис
+                      Օրինակ
                     </h2>
                     <div class="field-items">
                       <div class="field-item even">
@@ -166,7 +159,7 @@
                     class="field field-name-field-html-close field-type-list-text field-label-above"
                   >
                     <h2 class="block_title" id="field_html_close">
-                      Закрывающий тег
+                      Փակող թեգ
                     </h2>
                     <div class="field-items">
                       <div class="field-item even"><p>Պարտադիր է:</p></div>
@@ -178,10 +171,10 @@
                     <h2 class="block_title" id="field_html_attr">Հատկանիշներ</h2>
                     <div class="field-items">
                       <div class="field-item even">
-                        <p>
-                          Для этого элемента доступны
-                          <a href="attr\common.html">универсальные атрибуты</a>
-                          и <a href="attr\event.html">события</a>.
+                        <p class="more">
+                          Նաև այս տարրի համար հասանելի են հատուկ 
+                          <a href="attr\common.html">հատկանիշներ</a>
+                          և <a href="attr\event.html">իրադարձություններ</a>:
                         </p>
                       </div>
                     </div>
@@ -323,7 +316,7 @@
                     <div class="field-items">
                       <b-tabs type="is-boxed"
                         ><b-tab-item
-                          label="Настольные"
+                          label="Համակարգիչ"
                           icon="icon-desktop"
                           icon-pack="icon"
                           ><table class="data browser">
@@ -350,7 +343,7 @@
                             </tr>
                           </table></b-tab-item
                         ><b-tab-item
-                          label="Мобильные"
+                          label="Բջջային"
                           icon="icon-mobile"
                           icon-pack="icon"
                           ><table class="data browser">

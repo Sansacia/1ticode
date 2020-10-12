@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="webref.ru"
+      href="..\sites\ref\search.xml"
+    />
+    <title>Селекторы | WebReference</title>
+    <meta charset="utf-8" />
+    <link rel="next" href="selector\tag.html" />
+    <meta
+      name="description"
+      content="Основным понятием в CSS выступает селектор — это некоторое имя стиля, для которого добавляются параметры форматирования. В качестве селектора выступают теги, классы и идентификаторы. Общий способ записи имеет следующий вид. Селектор { свойство1: значение; свойство2: значение; } Вначале пишется имя селектора, наօրինակ, table, это означает, что все стилевые параметры будут"
+    />
+    <link rel="image_src" href="..\assets\images\book\css-selector.png" />
+    <link
+      rel="stylesheet"
+      href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="columns is-vcentered is-multiline">
+          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
+            <a href="..\index.htm"
+              ><span class="t1">Arm</span><span class="t2">Code</span></a
+            >
+          </div>
+          <div
+            class="column is-12-mobile is-12-tablet is-6-desktop search-site"
+          >
+            <form action="/search/" id="cse-search-box">
+              <div class="field has-addons">
+                <div class="control is-search">
+                  <input
+                    type="search"
+                    placeholder="Поиск по сайту"
+                    name="s"
+                    autocomplete="off"
+                    id="cse-search-input"
+                    class="input"
+                  /><input
+                    type="hidden"
+                    name="cx"
+                    value="partner-pub-0708135098984815:9970767379"
+                  /><input type="hidden" name="cof" value="FORID:10" /><input
+                    type="hidden"
+                    name="ie"
+                    value="UTF-8"
+                  />
+                </div>
+                <div class="control">
+                  <button class="button is-info">
+                    <i class="icon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <nav id="navMenu" class="navbar">
+        <div class="container">
+          <ul class="menu">
+            <li><a href="..\index.htm">Գլխավոր</a></li>
+            <li class="dropdown">
+              <span>Տեղեկատուներ</span>
+              <ul>
+                <li><a href="..\html.html">HTML</a></li>
+                <li><a href="..\css.html">CSS</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <span>Руководства</span>
+              <ul>
+                <li><a href="..\layout.html">Вёрстка</a></li>
+                <li><a href="..\dev.html">Веб-технологии</a></li>
+                <li><a href="..\mobile.html">Мобильные приложения</a></li>
+              </ul>
+            </li>
+            <li><a href="..\recipe.html">Рецепты</a></li>
+            <li><a href="..\course.html">Курсы</a></li>
+            <li><a href="..\practice.html">Практика</a></li>
+            <li><a href="..\individual.html">Самостоятельная</a></li>
+            <li><a href="..\quiz.html">Тесты</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="webref">
+      <div class="container breadcrumb">
+        <section class="region region-crumbs">
+          <div id="easy_breadcrumb-easy_breadcrumb" class="block">
+            <div class="block_content">
+              <div
+                itemscope=""
+                class="easy-breadcrumb"
+                itemtype="http://data-vocabulary.org/Breadcrumb"
+              >
+                <span itemprop="title"
+                  ><a
+                    href="..\index.htm"
+                    class="easy-breadcrumb_segment easy-breadcrumb_segment-front"
+                    >Գլխավոր</a
+                  ></span
+                >
+                <span class="easy-breadcrumb_segment-separator"></span>
+                <span itemprop="title"
+                  ><a
+                    href="..\css.html"
+                    class="easy-breadcrumb_segment easy-breadcrumb_segment-1"
+                    >Css-ի տեղեկատու</a
+                  ></span
+                >
+                <span class="easy-breadcrumb_segment-separator"></span>
+                <span
+                  class="easy-breadcrumb_segment easy-breadcrumb_segment-title"
+                  itemprop="title"
+                  >Селекторы</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <div class="columns is-variable is-4 is-multiline">
+          <div
+            class="column is-12-mobile is-12-tablet is-9-desktop content-section"
+            id="webref-main"
+          >
+            <section class="region region-adv-top">
+              <div id="block-27" class="block">
+                <div class="block_content">
+                  <script
+                    async=""
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                  ></script>
+                  <ins
+                    class="adsbygoogle"
+                    style="display: block"
+                    data-ad-client="ca-pub-0708135098984815"
+                    data-ad-slot="1599783371"
+                    data-ad-format="horizontal"
+                    data-full-width-responsive="true"
+                  ></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+              </div>
+            </section>
+            <div class="title"><h1>Селекторы</h1></div>
+            <div id="example-form"></div>
+            <section class="region region-content">
+              <div id="system-main" class="block">
+                <div class="block_content">
+                  <p>
+                    Основным понятием в CSS выступает селектор&nbsp;— это
+                    некоторое имя стиля, для которого добавляются параметры
+                    форматирования. В качестве селектора выступают теги, классы
+                    и идентификаторы. Общий способ записи имеет следующий вид.
+                  </p>
+                  <pre><code class="no-buttons">Селектор { свойство1: значение; свойство2: значение; }</code></pre>
+                  <p>
+                    Вначале пишется имя селектора, наօրինակ,
+                    <span class="tag">table</span>, это означает, что все
+                    стилевые параметры будут применяться к тегу
+                    <span class="tag">&lt;table&gt;</span>, затем идут фигурные
+                    скобки, в которых записывается стилевое свойство, а его
+                    значение указывается после двоеточия. Стилевые свойства
+                    разделяются между собой точкой с запятой, в конце этот
+                    символ можно опустить.
+                  </p>
+                  <section class="book-toc">
+                    <div class="columns">
+                      <div class="column is-2"></div>
+                      <div class="column is-10">
+                        <h2>Содержание</h2>
+                        <ul class="menu">
+                          <li class="">
+                            <a href="selector\tag.html">Селекторы элемента</a>
+                          </li>
+                          <li class="">
+                            <a href="selector\id.html">Идентификаторы</a>
+                          </li>
+                          <li class="">
+                            <a href="selector\class.html">Классы</a>
+                          </li>
+                          <li class="">
+                            <a href="selector\multiclass.html">Мультиклассы</a>
+                          </li>
+                          <li class="">
+                            <a href="selector\universal.html"
+                              >Универсальный селектор</a
+                            >
+                          </li>
+                          <li class="">
+                            <a href="selector\descendant.html"
+                              >Вложенные селекторы</a
+                            >
+                          </li>
+                          <li class="">
+                            <a href="selector\child.html">Дочерние селекторы</a>
+                          </li>
+                          <li class="">
+                            <a href="selector\sibling.html"
+                              >Родственные селекторы</a
+                            >
+                          </li>
+                          <li class="">
+                            <a href="selector\adjacent.html"
+                              >Соседние селекторы</a
+                            >
+                          </li>
+                          <li class="">
+                            <a href="selector\attr.html">Селекторы атрибутов</a>
+                          </li>
+                          <li class="">
+                            <a href="selector\attr2.html"
+                              >[атрибут=&quot;значение&quot;]</a
+                            >
+                          </li>
+                          <li class="">
+                            <a href="selector\attr3.html"
+                              >[атрибут^=&quot;значение&quot;]</a
+                            >
+                          </li>
+                          <li class="">
+                            <a href="selector\attr4.html"
+                              >[атрибут$=&quot;значение&quot;]</a
+                            >
+                          </li>
+                          <li class="">
+                            <a href="selector\attr5.html"
+                              >[атрибут*=&quot;значение&quot;]</a
+                            >
+                          </li>
+                          <li class="">
+                            <a href="selector\attr6.html"
+                              >[атрибут~=&quot;значение&quot;]</a
+                            >
+                          </li>
+                          <li class="">
+                            <a href="selector\attr7.html"
+                              >[атрибут|=&quot;значение&quot;]</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="columns about-author">
+                    <div class="column is-2 about-author-photo">
+                      <img
+                        class="about-author-avatar"
+                        src="..\assets\author\picture-2-1436114164.jpg"
+                        alt="Влад Мержевич"
+                      />
+                    </div>
+                    <div class="column is-10 about-author-photo">
+                      <h2>Влад Мержевич</h2>
+                      <div class="about-author-descr">
+                        <p>
+                          Веб-разработчик, автор нескольких книг, посвящённых
+                          созданию сайтов, HTML и CSS. Кандидат технических
+                          наук.
+                        </p>
+                      </div>
+                      <div class="about-author-social">
+                        <a
+                          href="http://htmlbook.ru"
+                          rel="nofollow"
+                          title="Сайт автора"
+                          ><i class="icon-home"></i></a
+                        ><a
+                          href="mailto:vlad@webref.ru"
+                          rel="nofollow"
+                          title="Написать письмо"
+                          ><i class="icon-email"></i></a
+                        ><a
+                          href="https://vk.com/id16752907"
+                          rel="nofollow"
+                          title="ВКонтакте"
+                          ><i class="icon-vk"></i></a
+                        ><a
+                          href="https://www.facebook.com/vlad.merjevich"
+                          rel="nofollow"
+                          title="Facebook"
+                          ><i class="icon-facebook"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="container credit">
+                    <div class="columns is-multiline">
+                      <h2 class="element-invisible">Автор и редакторы</h2>
+                      <div class="column is-6 credit-author">
+                        <i class="icon-user"></i> Автор: Влад Мержевич
+                      </div>
+                      <div class="column is-6 credit-changed">
+                        <i class="icon-calendar"></i> Последнее изменение:
+                        06.05.2016
+                      </div>
+                      <div class="column is-12 credit-editor">
+                        <i class="icon-users"></i> Редакторы: Влад Мержевич
+                      </div>
+                    </div>
+                  </section>
+                  <script src="..\sites\all\themes\ori\js\mousetrap.min.js"></script>
+                  <script>
+                    Mousetrap.bind("mod+right", function () {
+                      document.location = "/css/selector/tag";
+                    });
+                  </script>
+                  <div
+                    class="grid-container book-navigation"
+                    id="book-navigation-bottom"
+                  >
+                    <div class="columns">
+                      <div class="column is-6 page-previous"></div>
+                      <div class="column is-6 page-next">
+                        <a
+                          href="selector\tag.html"
+                          title="На следующую страницу"
+                          >Селекторы элемента</a
+                        ><br /><span class="navigation-tooltip"
+                          ><kbd>Ctrl</kbd>+<kbd>→</kbd></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div id="block-20" class="block">
+                    <div class="block_content">
+                      <script
+                        async=""
+                        src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                      ></script>
+                      <ins
+                        class="adsbygoogle"
+                        style="display: block"
+                        data-ad-client="ca-pub-0708135098984815"
+                        data-ad-slot="1599783371"
+                        data-full-width-responsive="true"
+                        data-ad-format="horizontal"
+                      ></ins>
+                      <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                      </script>
+                    </div>
+                  </div>
+                  <div id="block-29" class="block">
+                    <div class="block_content">
+                     
+                    </div>
+                  </div>
+                  <div id="block-10" class="block">
+                    <div class="block_content">
+                     
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-12-mobile is-3-desktop">
+              <p class="logo">
+                <span>Arm</span><span class="t2">Code</span>
+              </p>
+              <p>Гл. редактор: Влад Мержевич</p>
+              <address>vlad@webref.ru</address>
+            </div>
+            <section class="column is-12-mobile is-6-desktop">
+              <h3>О сайте</h3>
+              <p>
+                На сайте находятся справочники и учебные курсы по различным
+                веб-технологиям, а также руководства по вёрстке веб-страниц и
+                разработке мобильных приложений.
+              </p>
+            </section>
+          
+          </div>
+        </div>
+      </div>
+      
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="..\sites\all\themes\v4\js\ads.js"></script>
+    <script src="..\assets\js\js__sJuaUw75cNd3UZCYEObJq-3ZCCfXBcET2vEhunwWU0.js"></script>
+    <script src="..\assets\js\js_pN-4qUrqNCyweCdGOFM2HvXOELRW2gQGM19DvArodSQ.js"></script>
+  </body>
+</html>

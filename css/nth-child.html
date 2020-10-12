@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="webref.ru"
+      href="..\sites\ref\search.xml"
+    />
+    <title>Псевдокласс :nth-child | CSS | WebReference</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Используется для добавления стиля к элементам на основе нумерации в дереве элементов."
+    />
+    <link rel="image_src" href="..\assets\images\book\css.png" />
+    <link
+      rel="stylesheet"
+      href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="columns is-vcentered is-multiline">
+          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
+            <a href="..\index.htm"
+              ><span class="t1">Arm</span><span class="t2">Code</span></a
+            >
+          </div>
+          
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <nav id="navMenu" class="navbar">
+        <div class="container">
+          <ul class="menu">
+            <li><a href="..\index.htm">Գլխավոր</a></li>
+            <li class="dropdown">
+              <span>Տեղեկատուներ</span>
+              <ul>
+                <li><a href="..\html.html">HTML</a></li>
+                <li><a href="..\css.html">CSS</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              
+        </div>
+      </nav>
+    </header>
+    <main id="webref">
+      <div class="container breadcrumb">
+        <section class="region region-crumbs">
+          <div id="easy_breadcrumb-easy_breadcrumb" class="block">
+            <div class="block_content">
+              <div
+                itemscope=""
+                class="easy-breadcrumb"
+                itemtype="http://data-vocabulary.org/Breadcrumb"
+              >
+                <span itemprop="title"
+                  ><a
+                    href="..\index.htm"
+                    class="easy-breadcrumb_segment easy-breadcrumb_segment-front"
+                    >Գլխավոր</a
+                  ></span
+                >
+                <span class="easy-breadcrumb_segment-separator"></span>
+                <span itemprop="title"
+                  ><a
+                    href="..\css.html"
+                    class="easy-breadcrumb_segment easy-breadcrumb_segment-1"
+                    >Css-ի տեղեկատու</a
+                  ></span
+                >
+                <span class="easy-breadcrumb_segment-separator"></span>
+                <span
+                  class="easy-breadcrumb_segment easy-breadcrumb_segment-title"
+                  itemprop="title"
+                  >Псевдокласс :nth-child</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <div class="columns is-variable is-4 is-multiline">
+          <div
+            class="column is-12-mobile is-12-tablet is-9-desktop content-section"
+            id="webref-main"
+          >
+            <section class="region region-adv-top">
+              <div id="block-27" class="block">
+                <div class="block_content">
+                  <script
+                    async=""
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                  ></script>
+                  <ins
+                    class="adsbygoogle"
+                    style="display: block"
+                    data-ad-client="ca-pub-0708135098984815"
+                    data-ad-slot="1599783371"
+                    data-ad-format="horizontal"
+                    data-full-width-responsive="true"
+                  ></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+              </div>
+            </section>
+            <div class="title"><h1>Псевдокласс :nth-child</h1></div>
+            <div id="example-form"></div>
+            <section class="region region-content">
+              <div id="system-main" class="block">
+                <div class="block_content">
+                 
+                  <p>
+                    Псевдокласс
+                    <span class="attribute">:nth-child</span> используется для
+                    добавления стиля к элементам на основе нумерации в дереве
+                    элементов.
+                  </p>
+                  <div
+                    class="field field-name-field-css-syntax field-type-text-long field-label-above"
+                  >
+                    <h2 class="block_title" id="field_css_syntax">
+                      Синтаксис
+                      <button @click="isHintSyntax=true" class="hint-ref">
+                        <i class="icon-help"></i>
+                      </button>
+                    </h2>
+                    <div class="field-items">
+                      <pre><code><i>Селектор</i>:nth-child(odd | even | &lt;число&gt; | &lt;выражение&gt;)&nbsp;{...}</code></pre>
+                    </div>
+                  </div>
+                  <b-modal :active.sync="isHintSyntax"
+                    ><h2>Обозначения</h2>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th></th>
+                          <th>Описание</th>
+                          <th style="width: 130px">Օրինակ</th>
+                        </tr>
+                        <tr>
+                          <td>&lt;тип&gt;</td>
+                          <td>Указывает тип значения.</td>
+                          <td>&lt;размер&gt;</td>
+                        </tr>
+                        <tr>
+                          <td>A&nbsp;&amp;&amp;&nbsp;B</td>
+                          <td>
+                            Значения должны выводиться в указанном порядке.
+                          </td>
+                          <td>&lt;размер&gt; &amp;&amp; &lt;цвет&gt;</td>
+                        </tr>
+                        <tr>
+                          <td>A | B</td>
+                          <td>
+                            Указывает, что надо выбрать только одно значение из
+                            предложенных (A или B).
+                          </td>
+                          <td>normal | small-caps</td>
+                        </tr>
+                        <tr>
+                          <td>A || B</td>
+                          <td>
+                            Каждое значение может использоваться самостоятельно
+                            или совместно с другими в произвольном порядке.
+                          </td>
+                          <td>width || count</td>
+                        </tr>
+                        <tr>
+                          <td>[ ]</td>
+                          <td>Группирует значения.</td>
+                          <td>[ crop || cross ]</td>
+                        </tr>
+                        <tr>
+                          <td>*</td>
+                          <td>Повторять ноль или больше раз.</td>
+                          <td>[,&lt;время&gt;]*</td>
+                        </tr>
+                        <tr>
+                          <td>+</td>
+                          <td>Повторять один или больше раз.</td>
+                          <td>&lt;число&gt;+</td>
+                        </tr>
+                        <tr>
+                          <td>?</td>
+                          <td>
+                            Указанный тип, слово или группа не является
+                            обязательным.
+                          </td>
+                          <td>inset?</td>
+                        </tr>
+                        <tr>
+                          <td>{A, B}</td>
+                          <td>Повторять не менее A, но не более B раз.</td>
+                          <td>&lt;радиус&gt;{1,4}</td>
+                        </tr>
+                        <tr>
+                          <td>#</td>
+                          <td>Повторять один или больше раз через запятую.</td>
+                          <td>&lt;время&gt;#</td>
+                        </tr>
+                      </tbody>
+                    </table></b-modal
+                  >
+                  <div
+                    class="field field-name-field-css-value field-type-text-long field-label-above"
+                  >
+                    <h2 class="block_title" id="field_css_value">Значения</h2>
+                    <div class="field-items">
+                      <div class="field-item even">
+                        <dl class="param2">
+                          <dt>odd</dt>
+                          <dd>Все нечётные номера элементов.</dd>
+                          <dt>even</dt>
+                          <dd>Все чётные номера элементов.</dd>
+                          <dt>&lt;число&gt;</dt>
+                          <dd>
+                            Порядковый номер дочернего элемента относительно
+                            своего родителя. Нумерация начинается с 1, это будет
+                            первый элемент в списке.
+                          </dd>
+                          <dt>&lt;выражение&gt;</dt>
+                          <dd>
+                            Задаётся в виде <span class="value">an±b</span>, где
+                            <span class="value">a</span> и
+                            <span class="value">b</span> — целые числа, а
+                            <span class="value">n</span> — счётчик, который
+                            автоматически принимает значение 0, 1, 2...
+                          </dd>
+                        </dl>
+                        <p>
+                          Если <span class="value">a</span> равно нулю, то оно
+                          не пишется и запись сокращается до
+                          <span class="value">b</span>. Если
+                          <span class="value">b</span> равно нулю, то оно также
+                          не указывается и выражение записывается в форме
+                          <span class="value">an</span>.
+                          <span class="value">a</span> и
+                          <span class="value">b</span> могут быть отрицательными
+                          числами, в этом случае знак плюс меняется на минус,
+                          наօրինակ: 5n-1.
+                        </p>
+                        <p>
+                          За счёт использования отрицательных значений
+                          <span class="value">a</span> и
+                          <span class="value">b</span> некоторые результаты
+                          могут также получиться отрицательными или равными
+                          нулю. Однако на элементы оказывают влияние только
+                          положительные значения из-за того, что нумерация
+                          элементов начинается с 1.
+                        </p>
+                        <p>
+                          В табл.&nbsp;1 приведены некоторые возможные выражения
+                          и ключевые слова, а также указано, какие номера
+                          элементов будут задействованы.
+                        </p>
+                        <table class="data">
+                          <caption>
+                            Табл. 1. Результат для различных значений
+                            псевдокласса
+                          </caption>
+                          <tr>
+                            <th>Значение</th>
+                            <th>Номера элементов</th>
+                            <th>Описание</th>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>
+                              Первый элемент, является синонимом псевдокласса
+                              <a href="first-child.html">:first-child</a>.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>Пятый элемент.</td>
+                          </tr>
+                          <tr>
+                            <td>2n</td>
+                            <td>2, 4, 6, 8, 10,…</td>
+                            <td>
+                              Все чётные элементы, аналог значения
+                              <span class="value">even</span>.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2n+1</td>
+                            <td>1, 3, 5, 7, 9,…</td>
+                            <td>
+                              Все нечётные элементы, аналог значения
+                              <span class="value">odd</span>.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3n</td>
+                            <td>3, 6, 9, 12, 15,…</td>
+                            <td>Каждый третий элемент.</td>
+                          </tr>
+                          <tr>
+                            <td>3n+2</td>
+                            <td>2, 5, 8, 11, 14,…</td>
+                            <td>Каждый третий элемент, начиная со второго.</td>
+                          </tr>
+                          <tr>
+                            <td>n+4</td>
+                            <td>4, 5, 6, 7, 8,…</td>
+                            <td>Все элементы, кроме первых трёх.</td>
+                          </tr>
+                          <tr>
+                            <td>-n+3</td>
+                            <td>3, 2, 1</td>
+                            <td>Первые три элемента.</td>
+                          </tr>
+                          <tr>
+                            <td>5n-2</td>
+                            <td>3, 8, 13, 18, 23,…</td>
+                            <td>&#8212;</td>
+                          </tr>
+                          <tr>
+                            <td>even</td>
+                            <td>2, 4, 6, 8, 10,…</td>
+                            <td>Все чётные элементы.</td>
+                          </tr>
+                          <tr>
+                            <td>odd</td>
+                            <td>1, 3, 5, 7, 9,…</td>
+                            <td>Все нечётные элементы.</td>
+                          </tr>
+                        </table>
+                        <p>
+                          Допустимо комбинировать два псевдокласса
+                          <span class="attribute">:nth-child</span> для выбора
+                          диапазона элементов. Здесь будут выбраны все элементы
+                          со второго по пятый.
+                        </p>
+                        <pre><code data-language="css">:nth-child(n+2):nth-child(-n+5) { … }</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="field field-name-field-css-example field-type-text-long field-label-above"
+                  >
+                    <h2 class="block_title" id="field_css_example">Օրինակ</h2>
+                    <div class="field-items">
+                      <div class="field-item even">
+                        <w-example
+                          >&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt;
+                          &lt;meta charset=&quot;utf-8&quot;&gt;
+                          &lt;title&gt;nth-child&lt;/title&gt; &lt;style&gt;
+                          table { width: 100%; /* Ширина таблицы */
+                          border-spacing: 0; /* Расстояние между ячейками */ }
+                          tr:nth-child(2n) { background: #f0f0f0; /* Цвет фона
+                          */ } tr:nth-child(1) { background: #666; /* Цвет фона
+                          */ color: #fff; /* Цвет текста */ } &lt;/style&gt;
+                          &lt;/head&gt; &lt;body&gt; &lt;table
+                          border=&quot;1&quot;&gt; &lt;tr&gt;
+                          &lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;2134&lt;/td&gt;&lt;td&gt;2135&lt;/td&gt;
+                          &lt;td&gt;2136&lt;/td&gt;&lt;td&gt;2137&lt;/td&gt;&lt;td&gt;2138&lt;/td&gt;
+                          &lt;/tr&gt; &lt;tr&gt;
+                          &lt;td&gt;Нефть&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;34&lt;/td&gt;
+                          &lt;td&gt;62&lt;/td&gt;&lt;td&gt;74&lt;/td&gt;&lt;td&gt;57&lt;/td&gt;
+                          &lt;/tr&gt; &lt;tr&gt;
+                          &lt;td&gt;Золото&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;69&lt;/td&gt;
+                          &lt;td&gt;72&lt;/td&gt;&lt;td&gt;56&lt;/td&gt;&lt;td&gt;47&lt;/td&gt;
+                          &lt;/tr&gt; &lt;tr&gt;
+                          &lt;td&gt;Дерево&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;73&lt;/td&gt;
+                          &lt;td&gt;79&lt;/td&gt;&lt;td&gt;34&lt;/td&gt;&lt;td&gt;86&lt;/td&gt;
+                          &lt;/tr&gt; &lt;tr&gt;
+                          &lt;td&gt;Камни&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;td&gt;34&lt;/td&gt;
+                          &lt;td&gt;88&lt;/td&gt;&lt;td&gt;53&lt;/td&gt;&lt;td&gt;103&lt;/td&gt;
+                          &lt;/tr&gt; &lt;/table&gt; &lt;/body&gt;
+                          &lt;/html&gt;</w-example
+                        >
+                        <p>
+                          В данном օրինակе псевдокласс
+                          <span class="attribute">:nth-child</span> используется
+                          для изменения стиля первой строки таблицы, а также для
+                          выделения цветом всех чётных строк (рис.&nbsp;1).
+                        </p>
+                        <p class="fig">
+                          <img
+                            src="..\assets\images\css\css_nth-child.png"
+                            alt="Применение псевдокласса :nth-child к строкам таблицы"
+                            width="566"
+                            height="246"
+                          />
+                        </p>
+                        <p class="figsign">
+                          Рис. 1. Применение псевдокласса :nth-child к строкам
+                          таблицы
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="field field-name-field-css-spec field-type-text-long field-label-above"
+                  >
+                    <h2 class="block_title" id="field_css_spec">
+                      Спецификация
+                      <button @click="isHintSpec=true" class="hint-ref">
+                        <i class="icon-help"></i>
+                      </button>
+                    </h2>
+                    <div class="field-items">
+                      <table class="spec">
+                        <thead>
+                          <tr>
+                            <th>Спецификация</th>
+                            <th>Статус</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a
+                                href="https://www.w3.org/TR/selectors-4/#the-nth-child-pseudo"
+                                hreflang="en"
+                                rel="nofollow"
+                                >Selectors Level 4</a
+                              >
+                            </td>
+                            <td><span class="spec-WD">Рабочий проект</span></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a
+                                href="https://www.w3.org/TR/selectors-3/#nth-child-pseudo"
+                                hreflang="en"
+                                rel="nofollow"
+                                >Selectors Level 3</a
+                              >
+                            </td>
+                            <td><span class="spec-REC">Рекомендация</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <b-modal :active.sync="isHintSpec"
+                    ><h2>Спецификация</h2>
+                    <p>
+                      Каждая спецификация проходит несколько стадий одобрения.
+                    </p>
+                    <ul>
+                      <li>
+                        Recommendation (<span class="spec-REC"
+                          >Рекомендация</span
+                        >) — спецификация одобрена W3C и рекомендована как
+                        стандарт.
+                      </li>
+                      <li>
+                        Candidate Recommendation (<span class="spec-CR"
+                          >Возможная рекомендация</span
+                        >) — группа, отвечающая за стандарт, удовлетворена, как
+                        он соответствует своим целям, но требуется помощь
+                        сообщества разработчиков по реализации стандарта.
+                      </li>
+                      <li>
+                        Proposed Recommendation (<span class="spec-PR"
+                          >Предлагаемая рекомендация</span
+                        >) — на этом этапе документ представлен на рассмотрение
+                        Консультативного совета W3C для окончательного
+                        утверждения.
+                      </li>
+                      <li>
+                        Working Draft (<span class="spec-WD"
+                          >Рабочий проект</span
+                        >) — более зрелая версия черновика после обсуждения и
+                        внесения поправок для рассмотрения сообществом.
+                      </li>
+                      <li>
+                        Editor's draft (<span class="spec-ED"
+                          >Редакторский черновик</span
+                        >) — черновая версия стандарта после внесения правок
+                        редакторами проекта.
+                      </li>
+                      <li>
+                        Draft (<span class="spec-Draft"
+                          >Черновик спецификации</span
+                        >) — первая черновая версия стандарта.
+                      </li>
+                    </ul></b-modal
+                  >
+                  <div
+                    class="field field-name-field-css-browser field-type-text-long field-label-above"
+                  >
+                    <h2 class="block_title" id="field_css_browser">
+                      Браузеры
+                      <button @click="isHintBrowser=true" class="hint-ref">
+                        <i class="icon-help"></i>
+                      </button>
+                    </h2>
+                    <div class="field-items">
+                      <b-tabs type="is-boxed"
+                        ><b-tab-item
+                          label="Настольные"
+                          icon="icon-desktop"
+                          icon-pack="icon"
+                          ><table class="data browser">
+                            <tr class="br">
+                              <td>
+                                <span
+                                  class="ie"
+                                  title="Internet Explorer"
+                                ></span>
+                              </td>
+                              <td><span class="ed" title="Edge"></span></td>
+                              <td><span class="cr" title="Chrome"></span></td>
+                              <td><span class="op" title="Opera"></span></td>
+                              <td><span class="sa" title="Safari"></span></td>
+                              <td><span class="fx" title="Firefox"></span></td>
+                            </tr>
+                            <tr class="sp">
+                              <td class="yes"><span>9</span></td>
+                              <td class="yes"><span>12</span></td>
+                              <td class="yes"><span>1</span></td>
+                              <td class="yes"><span>9.5</span></td>
+                              <td class="yes"><span>3.1</span></td>
+                              <td class="yes"><span>3.5</span></td>
+                            </tr>
+                          </table></b-tab-item
+                        ><b-tab-item
+                          label="Мобильные"
+                          icon="icon-mobile"
+                          icon-pack="icon"
+                          ><table class="data browser">
+                            <tr class="br">
+                              <td>
+                                <span class="an" title="Android WebView"></span>
+                              </td>
+                              <td>
+                                <span
+                                  class="fx"
+                                  title="Firefox для Android"
+                                ></span>
+                              </td>
+                              <td>
+                                <span
+                                  class="op"
+                                  title="Opera для Android"
+                                ></span>
+                              </td>
+                              <td>
+                                <span class="sa" title="iOS Safari"></span>
+                              </td>
+                            </tr>
+                            <tr class="sp">
+                              <td class="yes"><span>2.1</span></td>
+                              <td class="yes"><span>1</span></td>
+                              <td class="yes"><span>9.5</span></td>
+                              <td class="yes"><span>3.1</span></td>
+                            </tr>
+                          </table></b-tab-item
+                        ></b-tabs
+                      >
+                    </div>
+                  </div>
+                  <b-modal :active.sync="isHintBrowser"
+                    ><h2>Браузеры</h2>
+                    <p>
+                      В таблице браузеров применяются следующие обозначения.
+                    </p>
+                    <ul>
+                      <li>
+                        <span class="yes" style="padding: 2px"
+                          ><span class="icon-ok"></span></span
+                        >&nbsp;— свойство полностью поддерживается браузером со
+                        всеми допустимыми значениями;
+                      </li>
+                      <li>
+                        <span class="no" style="padding: 2px"
+                          ><span class="icon-cancel"></span></span
+                        >&nbsp;— свойство браузером не воспринимается и
+                        игнорируется;
+                      </li>
+                      <li>
+                        <span class="warn" style="padding: 2px"
+                          ><span class="icon-warning"></span></span
+                        >&nbsp;— при работе возможно появление различных ошибок,
+                        либо свойство поддерживается лишь частично, наօրինակ, не
+                        все допустимые значения действуют или свойство
+                        применяется не ко всем элементам, которые указаны в
+                        спецификации.
+                      </li>
+                    </ul>
+                    <p>
+                      Число указывает версию браузера, начиная с которой
+                      свойство поддерживается.
+                    </p></b-modal
+                  >
+                  <div
+                    class="field field-name-field-css-cat field-type-taxonomy-term-reference field-label-hidden"
+                  >
+                    <div class="field-items">
+                     
+                    </div>
+                  </div>
+                  <div id="views-similar-block" class="block">
+                    
+                    <div class="block_content">
+                      <div
+                        class="view view-similar view-id-similar view-display-id-block view-dom-id-87cc32ec35597b9a5ddc41ab72da3db8"
+                      >
+                        <div class="view-content">
+                          <div class="similar">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="views-similar-recipe" class="block">
+                  
+                    <div class="block_content">
+                      <div
+                        class="view view-similar view-id-similar view-display-id-recipe view-dom-id-0cc1e0fee5b5adb2e15ac4034f95499a"
+                      >
+                        <div class="view-content">
+                          <div class="recipe-list">
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="views-similar-block_1" class="block">
+                   
+                    <div class="block_content">
+                      <div
+                        class="view view-similar view-id-similar view-display-id-block_1 view-dom-id-2fef3f1a1e2a44c4b1a9fa64c56d669c"
+                      >
+                        <div class="view-content">
+                          <div class="recipe-list">
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <section class="container credit">
+                    <div class="columns is-multiline">
+                      <h2 class="element-invisible">Автор и редакторы</h2>
+                      <div class="column is-6 credit-author">
+                        <i class="icon-user"></i> Автор: Влад Мержевич
+                      </div>
+                      <div class="column is-6 credit-changed">
+                        <i class="icon-calendar"></i> Последнее изменение:
+                        06.08.2018
+                      </div>
+                      <div class="column is-12 credit-editor">
+                        <i class="icon-users"></i> Редакторы: Влад Мержевич
+                      </div>
+                    </div>
+                  </section>
+                  <div id="block-20" class="block">
+                    <div class="block_content">
+                      <script
+                        async=""
+                        src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                      ></script>
+                      <ins
+                        class="adsbygoogle"
+                        style="display: block"
+                        data-ad-client="ca-pub-0708135098984815"
+                        data-ad-slot="1599783371"
+                        data-full-width-responsive="true"
+                        data-ad-format="horizontal"
+                      ></ins>
+                      <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                      </script>
+                    </div>
+                  </div>
+                  <div id="block-29" class="block">
+                    <div class="block_content">
+                      
+                    </div>
+                  </div>
+                  <div id="block-10" class="block">
+                    <div class="block_content">
+                     
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-12-mobile is-3-desktop">
+              <p class="logo">
+                <span>Arm</span><span class="t2">Code</span>
+              </p>
+              <p>Гл. редактор: Влад Мержевич</p>
+              <address>vlad@webref.ru</address>
+            </div>
+            <section class="column is-12-mobile is-6-desktop">
+              <h3>О сайте</h3>
+              <p>
+                На сайте находятся справочники и учебные курсы по различным
+                веб-технологиям, а также руководства по вёрстке веб-страниц и
+                разработке мобильных приложений.
+              </p>
+            </section>
+            
+          </div>
+        </div>
+      </div>
+      
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="..\sites\all\themes\v4\js\ads.js"></script>
+    <script src="..\assets\js\js_uyMY7TM2FMjNzjMtdngp_jGTwQDjbgJGsoDMzta23sU.js"></script>
+    <script src="..\assets\js\js_pN-4qUrqNCyweCdGOFM2HvXOELRW2gQGM19DvArodSQ.js"></script>
+  </body>
+</html>

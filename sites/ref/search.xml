@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>webref.ru</ShortName>
+  <Description>Поиск по webref.ru</Description>
+  <Image height="16" width="16" type="image/x-icon">https://webref.ru/favicon.ico</Image>
+  <Url type="text/html" method="GET" xmlns:referrer="http://a9.com/-/opensearch/extensions/referrer/" template="https://webref.ru/sites/ref/?q={searchTerms}" />
+  <Url type="application/x-suggestions+json" template="https://webref.ru/sites/ref/suggestion.php?q={searchTerms}" />
+
+  <InputEncoding>UTF-8</InputEncoding>
+  <AdultContent>false</AdultContent>
+</OpenSearchDescription>

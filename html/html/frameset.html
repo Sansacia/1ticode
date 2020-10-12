@@ -1,0 +1,617 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="webref.ru"
+      href="..\sites\ref\search.xml"
+    />
+    <title>&lt;frameset&gt; | HTML | WebReference</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Определяет структуру фреймов на веб-странице."
+    />
+    <meta name="robots" content="index" />
+    <link rel="image_src" href="..\assets\images\book\html5.png" />
+    <link
+      rel="stylesheet"
+      href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="columns is-vcentered is-multiline">
+          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
+            <a href="..\index.htm"
+              ><span class="t1">Arm</span><span class="t2">Code</span></a
+            >
+          </div>
+          
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <nav id="navMenu" class="navbar">
+        <div class="container">
+          <ul class="menu">
+            <li><a href="..\index.htm">Գլխավոր</a></li>
+            <li class="dropdown">
+              <span>Տեղեկատուներ</span>
+              <ul>
+                <li><a href="..\html.html">HTML</a></li>
+                <li><a href="..\css.html">CSS</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              
+        </div>
+      </nav>
+    </header>
+    <main id="webref">
+      <div class="container breadcrumb">
+        <section class="region region-crumbs">
+          <div id="easy_breadcrumb-easy_breadcrumb" class="block">
+            <div class="block_content">
+              <div
+                itemscope=""
+                class="easy-breadcrumb"
+                itemtype="http://data-vocabulary.org/Breadcrumb"
+              >
+               <span itemprop="title"
+                  ><a
+                    href="..\index.htm"
+                    class="easy-breadcrumb_segment easy-breadcrumb_segment-front"
+                    >Գլխավոր</a
+                  ></span
+                >
+                <span class="easy-breadcrumb_segment-separator"></span>
+                <span itemprop="title"
+                  ><a
+                    href="..\html.html"
+                    class="easy-breadcrumb_segment easy-breadcrumb_segment-1"
+                    >Html-ի տեղեկատու</a
+                  ></span
+                >
+                <span class="easy-breadcrumb_segment-separator"></span>
+                <span
+                  class="easy-breadcrumb_segment easy-breadcrumb_segment-title"
+                  itemprop="title"
+                  >&lt;frameset&gt;</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <div class="columns is-variable is-4 is-multiline">
+          <div
+            class="column is-12-mobile is-12-tablet is-9-desktop content-section"
+            id="webref-main"
+          >
+            <section class="region region-adv-top">
+              <div id="block-27" class="block">
+                <div class="block_content">
+                  <script
+                    async=""
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                  ></script>
+                  <ins
+                    class="adsbygoogle"
+                    style="display: block"
+                    data-ad-client="ca-pub-0708135098984815"
+                    data-ad-slot="1599783371"
+                    data-ad-format="horizontal"
+                    data-full-width-responsive="true"
+                  ></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+              </div>
+            </section>
+            <div class="title"><h1>&lt;frameset&gt;</h1></div>
+            <div id="example-form"></div>
+            <section class="region region-content">
+              <div id="system-main" class="block">
+                <div class="block_content">
+                  
+                  <p>
+                    Определяет структуру фреймов на веб-странице. Фреймы
+                    разделяют окно браузера на отдельные области, расположенные
+                    вплотную друг к другу. В каждую из таких областей
+                    загружается самостоятельная веб-страница, определяемая с
+                    помощью элемента <a href="frame.html">&lt;frame&gt;</a>. С
+                    помощью фреймов веб-страница делится на два или более
+                    документа, которые обычно содержат навигацию по сайту и его
+                    контент. Механизм фреймов позволяет открывать документ в
+                    одном фрейме, по ссылке, нажатой в совершенно другом фрейме.
+                    Элемент <span class="tag">&lt;frameset&gt;</span> (от англ.
+                    <i>frame set</i>&nbsp;— набор рамок) заменяет собой
+                    <a href="body.html">&lt;body&gt;</a> на веб-странице.
+                    Допустимо использовать вложенную структуру элементов, это
+                    позволяет разбить один фрейм на две и более области.
+                  </p>
+                  <p>
+                    При использовании фреймов примите во внимание их следующие
+                    особенности.
+                  </p>
+                  <ul>
+                    <li>
+                      Поисковые системы плохо работают с фреймовой структурой,
+                      поскольку на страницах, которые содержат контент, обычно
+                      нет ссылок на другие документы.
+                    </li>
+                    <li>
+                      Фреймы скрывают адрес страницы на которой находится
+                      посетитель и устанавливаемый через элемент
+                      <a href="title.html">&lt;title&gt;</a>, и всегда
+                      показывают только адрес сайта. По этой причине
+                      понравившуюся страницу невозможно поместить в раздел
+                      &laquo;Избранное&raquo; браузера.
+                    </li>
+                    <li>
+                      Пользователь зачастую оказывается на сайте, совершенно не
+                      представляя, куда он попал, потому что всего лишь нажал на
+                      ссылку, полученную в поисковой системе. Чтобы посетителю
+                      сайта было проще разобраться, где он находится, на каждую
+                      страницу помещают название сайта, заголовок страницы и
+                      навигацию. Фреймы, как правило, нарушают данный принцип,
+                      отделяя заголовок сайта от содержания, а навигацию от
+                      контента. Представьте, что вы нашли подходящую ссылку в
+                      поисковой системе, нажимаете на неё, а в итоге открывается
+                      документ без названия и навигации. Чтобы понять, где мы
+                      находимся или посмотреть другие материалы, придётся
+                      редактировать путь в адресной строке, что в любом случае
+                      доставляет неудобство.
+                    </li>
+                    <li>
+                      Большое число фреймов требует для браузера выделения
+                      больше памяти, чем обычно.
+                    </li>
+                  </ul>
+                  <p class="note">
+                    Данный элемент устарел, не используйте его.
+                  </p>
+                  <div
+                    class="field field-name-field-html-syntax field-type-text-long field-label-above"
+                  >
+                                       <h2 class="block_title" id="field_html_syntax">
+                      Օրինակ
+                    </h2>
+                    <div class="field-items">
+                      <div class="field-item even">
+                        <pre><code data-language="html">&lt;frameset&gt;
+  &lt;frame&gt;
+&lt;/frameset&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="field field-name-field-html-close field-type-list-text field-label-above"
+                  >
+                    <h2 class="block_title" id="field_html_close">
+                     Փակող թեգ
+                    </h2>
+                    <div class="field-items">
+                      <div class="field-item even"><p>Պարտադիր է:</p></div>
+                    </div>
+                  </div>
+                  <div
+                    class="field field-name-field-html-attr field-type-text-long field-label-above"
+                  >
+                    <h2 class="block_title" id="field_html_attr">Հատկանիշներ</h2>
+                    <div class="field-items">
+                      <div class="field-item even">
+                        <dl class="param">
+                          <dt><a href="frameset\border.html">border</a></dt>
+                          <dd>Толщина границы между фреймами.</dd>
+                          <dt>
+                            <a href="frameset\bordercolor.html">bordercolor</a>
+                          </dt>
+                          <dd>Цвет линии границы.</dd>
+                          <dt><a href="frameset\cols.html">cols</a></dt>
+                          <dd>
+                            Устанавливает ширину или пропорции фреймов в виде
+                            колонок.
+                          </dd>
+                          <dt>
+                            <a href="frameset\frameborder.html">frameborder</a>
+                          </dt>
+                          <dd>
+                            Определяет, отображать рамку вокруг фрейма или нет.
+                          </dd>
+                          <dt><a href="frameset\rows.html">rows</a></dt>
+                          <dd>
+                            Задаёт размер или пропорции фреймов в виде строк.
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="field field-name-field-html-example field-type-text-long field-label-above"
+                  >
+                   <h2 class="block_title" id="field_html_example">Օրինակ</h2>
+                    <div class="field-items">
+                      <div class="field-item even">
+                        <w-example
+                          >&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01
+                          Frameset//EN&quot;
+                          &quot;http://www.w3.org/TR/html4/frameset.dtd&quot;&gt;
+                          &lt;html&gt; &lt;head&gt; &lt;meta
+                          http-equiv=&quot;Content-Type&quot;
+                          content=&quot;text/html; charset=utf-8&quot;&gt;
+                          &lt;title&gt;FRAMESET&lt;/title&gt; &lt;/head&gt;
+                          &lt;frameset rows=&quot;80,*&quot;
+                          cols=&quot;*&quot;&gt; &lt;frame
+                          src=&quot;page/top.html&quot;
+                          name=&quot;topFrame&quot; scrolling=&quot;no&quot;
+                          noresize&gt; &lt;frameset cols=&quot;80,*&quot;&gt;
+                          &lt;frame src=&quot;page/left.html&quot;
+                          name=&quot;leftFrame&quot; scrolling=&quot;no&quot;
+                          noresize&gt; &lt;frame src=&quot;page/main.html&quot;
+                          name=&quot;mainFrame&quot;&gt; &lt;/frameset&gt;
+                          &lt;/frameset&gt; &lt;/html&gt;</w-example
+                        >
+                        <p>
+                          Некоторые примеры организации фреймов приведены ниже.
+                        </p>
+                        <table>
+                          <tr>
+                            <td style="width: 49%; padding-right: 5px">
+                              <table
+                                class="data"
+                                style="border-collapse: separate"
+                              >
+                                <tr>
+                                  <td style="background: #f0f0f0">Фрейм 1</td>
+                                  <td style="background: #ffcc99">Фрейм 2</td>
+                                </tr>
+                                <tr>
+                                  <td style="background: #f0f0f0">Фрейм 3</td>
+                                  <td style="background: #ffcc99">Фрейм 4</td>
+                                </tr>
+                                <tr>
+                                  <td style="background: #f0f0f0">Фрейм 5</td>
+                                  <td style="background: #ffcc99">Фрейм 6</td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td
+                              style="
+                                width: 49%;
+                                padding-left: 5px;
+                                vertical-align: top;
+                              "
+                            >
+                              <table
+                                class="data"
+                                style="border-collapse: separate"
+                              >
+                                <tr>
+                                  <td
+                                    rowspan="2"
+                                    style="width: 28%; background: #f0f0f0"
+                                  >
+                                    Фрейм 1
+                                  </td>
+                                  <td style="width: 72%; background: #ffcc99">
+                                    Фрейм 2
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Фрейм 3</td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <pre><code data-language="html">&lt;frameset rows=&quot;33%,33%,*&quot; cols=&quot;50%, 50%&quot;&gt;
+ &lt;frame src=&quot;r1c1.html&quot; name=&quot;Фрейм 1&quot;&gt;
+ &lt;frame src=&quot;r1c2.html&quot; name=&quot;Фрейм 2&quot;&gt;
+ &lt;frame src=&quot;r2c1.html&quot; name=&quot;Фрейм 3&quot;&gt;
+ &lt;frame src=&quot;r2c2.html&quot; name=&quot;Фрейм 4&quot;&gt;
+ &lt;frame src=&quot;r3c1.html&quot; name=&quot;Фрейм 5&quot;&gt;
+ &lt;frame src=&quot;r3c2.html&quot; name=&quot;Фрейм 6&quot;&gt;
+&lt;/frameset&gt;</code></pre>
+                            </td>
+                            <td style="vertical-align: top">
+                              <pre><code data-language="html">&lt;frameset rows=&quot;*&quot; cols=&quot;80,*&quot;&gt;
+ &lt;frame src=&quot;frame1.html&quot; name=&quot;Фрейм 1&quot;&gt;
+ &lt;frameset rows=&quot;80,*&quot;&gt;
+   &lt;frame src=&quot;frame2.html&quot; name=&quot;Фрейм 2&quot;&gt;
+   &lt;frame src=&quot;frame3.html&quot; name=&quot;Фрейм 3&quot;&gt;
+ &lt;/frameset&gt;
+&lt;/frameset&gt;</code></pre>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="field field-name-field-html-spec field-type-text-long field-label-above"
+                  >
+                   <h2 class="block_title" id="field_html_spec">
+                     Կարևոր ինֆորմացիա
+                      <button @click="isHintSpec=true" class="hint-ref">
+                        <i class="icon-help"></i>
+                      </button>
+                    </h2>
+                    <div class="field-items">
+                      <table class="spec">
+                        <thead>
+                          <tr>
+                            <th>Հավելյալ տեղեկություն</th>
+                            <th>Կարգավիճակ</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a
+                                href="http://www.w3.org/TR/html401/present/frames.html#h-16.2.1"
+                                hreflang="en"
+                                lang="en"
+                                rel="nofollow"
+                                >HTML 4.01 Specification</a
+                              >
+                            </td>
+                            <td><span class="spec-REC">Рекомендация</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <b-modal :active.sync="isHintSpec"
+                    ><h2>Հստակեցում</h2>
+                    <p>
+                      Յուրաքանչյուր հստակեցում անցնում է մի քանի փուլեր հաստատման համար։
+                    </p>
+                    <ul>
+                      <li>
+                        Recommendation (<span class="spec-REC"
+                          >Рекомендация</span
+                        >) — Հստակեցումը հաստատվել է W3C-ով, եւ խորհուրդ է տրվում որպես ստանդարտ:
+                      </li>
+                      <li>
+                        Candidate Recommendation (<span class="spec-CR"
+                          >Возможная рекомендация</span
+                        >) — Ստանդարտի համար պատասխանատու խումբը բավարարված է, քանի որ այն համապատասխանում է իր նպատակներին, սակայն պահանջվում է մշակողների խմբի աջակցությունը ստանդարտի իրականացման համար:
+                      </li>
+                      <li>
+                        Proposed Recommendation (<span class="spec-PR"
+                          >Предлагаемая рекомендация</span
+                        >) — Այս փուլում փաստաթուղթը ներկայացվել է W3C խորհրդատվական խորհրդի քննարկմանը ՝ վերջնական հաստատման համար ։
+                      </li>
+                      <li>
+                        Working Draft (<span class="spec-WD"
+                          >Рабочий проект</span
+                        >) —Նախագծի ավելի հասուն տարբերակը քննարկումից հետո եւ ուղղումներ ներդրումը որպեսզի խումբը դիտարկի։
+                      </li>
+                      <li>
+                        Editor's draft (<span class="spec-ED"
+                          >Редакторский черновик</span
+                        >) — Նախագծի խմբագիրների կողմից խմբագրումից հետո ստանդարտի նախագծի նախագիծ:
+                      </li>
+                      <li>
+                        Draft (<span class="spec-Draft"
+                          >Черновик спецификации</span
+                        >) — Ստանդարտի առաջին նախագիծը:
+                      </li>
+                    </ul>
+                    <p>
+                      Առանձնատունը HTML-ի  (<span
+                        class="spec-Living"
+                        >Living</span
+                      >) — կենդանի ստանդարտն է, այն չի պահպանում տարբերակների ավանդական համարակալումը, քանի որ գտնվում է մշտական մշակման մեջ եւ պարբերաբար թարմացվում է:
+                    </p></b-modal
+                  >
+                  <div
+                    class="field field-name-field-html-browser field-type-text-long field-label-above"
+                  >
+                    <h2 class="block_title" id="field_html_browser">
+                      Բրաուզերներ
+                      <button @click="isHintBrowser=true" class="hint-ref">
+                        <i class="icon-help"></i>
+                      </button>
+                    </h2>
+                    <div class="field-items">
+                      <b-tabs type="is-boxed"
+                        ><b-tab-item
+                          label="Настольные"
+                          icon="icon-desktop"
+                          icon-pack="icon"
+                          ><table class="data browser">
+                            <tr class="br">
+                              <td>
+                                <span
+                                  class="ie"
+                                  title="Internet Explorer"
+                                ></span>
+                              </td>
+                              <td><span class="ed" title="Edge"></span></td>
+                              <td><span class="cr" title="Chrome"></span></td>
+                              <td><span class="op" title="Opera"></span></td>
+                              <td><span class="sa" title="Safari"></span></td>
+                              <td><span class="fx" title="Firefox"></span></td>
+                            </tr>
+                            <tr class="sp">
+                              <td class="yes"><span>3</span></td>
+                              <td class="yes"><span>12</span></td>
+                              <td class="yes"><span>1</span></td>
+                              <td class="yes"><span>4</span></td>
+                              <td class="yes"><span>1</span></td>
+                              <td class="yes"><span>1</span></td>
+                            </tr>
+                          </table></b-tab-item
+                        ><b-tab-item
+                          label="Мобильные"
+                          icon="icon-mobile"
+                          icon-pack="icon"
+                          ><table class="data browser">
+                            <tr class="br">
+                              <td>
+                                <span class="an" title="Android WebView"></span>
+                              </td>
+                              <td>
+                                <span
+                                  class="fx"
+                                  title="Firefox для Android"
+                                ></span>
+                              </td>
+                              <td>
+                                <span
+                                  class="op"
+                                  title="Opera для Android"
+                                ></span>
+                              </td>
+                              <td>
+                                <span class="sa" title="iOS Safari"></span>
+                              </td>
+                            </tr>
+                            <tr class="sp">
+                              <td class="yes"><span>1</span></td>
+                              <td class="yes"><span>1</span></td>
+                              <td class="yes"><span>6</span></td>
+                              <td class="yes"><span>1</span></td>
+                            </tr>
+                          </table></b-tab-item
+                        ></b-tabs
+                      >
+                    </div>
+                  </div>
+                  <b-modal :active.sync="isHintBrowser"
+                    ><h2>Բրաուզերներ</h2>
+                    <p>
+                      Բրաուզերների աղյուսակում կիրառվում են հետևյալ նշումները:
+                    </p>
+                    <ul>
+                      <li>
+                        <span class="yes" style="padding: 2px;"
+                          ><span class="icon-ok"></span></span
+                        >&nbsp;— Տարրը ամբողջությամբ ապահովվում է զննարկչի կողմից;
+                      </li>
+                      <li>
+                        <span class="no" style="padding: 2px;"
+                          ><span class="icon-cancel"></span></span
+                        >&nbsp;— Տարրը չի ընկալվում զննարկչի կողմից և
+                        անտեսվում է;
+                      </li>
+                      <li>
+                        <span class="warn" style="padding: 2px;"
+                          ><span class="icon-warning"></span></span
+                        >&nbsp;— Գործողության ընթացքում կարող են հայտնվել տարբեր սխալներ,
+                        կամ էլեմենտը աջակցվում է նախազգուշացումներով;
+                      </li>
+                    </ul>
+                    <p>
+                      Թիվը ցույց է տալիս զննարկչի տարբերակը, որից աջակցվում է տարրը:
+                    </p></b-modal
+                  >
+                  <div
+                    class="field field-name-field-html-cat field-type-taxonomy-term-reference field-label-hidden"
+                  >
+                    <div class="field-items">
+                      
+                    </div>
+                  </div>
+                  <section class="container credit">
+                    <div class="columns is-multiline">
+                      <h2 class="element-invisible">Автор и редакторы</h2>
+                      <div class="column is-6 credit-author">
+                        <i class="icon-user"></i> Автор: Էրիկ Էգնատոսյան
+                      </div>
+                      <div class="column is-6 credit-changed">
+                        <i class="icon-calendar"></i> Последнее изменение:
+                        18.02.2020
+                      </div>
+                      <div class="column is-12 credit-editor">
+                        <i class="icon-users"></i> Редакторы: Էրիկ Էգնատոսյան
+                      </div>
+                    </div>
+                  </section>
+                  <div id="block-20" class="block">
+                    <div class="block_content">
+                      <script
+                        async=""
+                        src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                      ></script>
+                      <ins
+                        class="adsbygoogle"
+                        style="display: block"
+                        data-ad-client="ca-pub-0708135098984815"
+                        data-ad-slot="1599783371"
+                        data-full-width-responsive="true"
+                        data-ad-format="horizontal"
+                      ></ins>
+                      <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                      </script>
+                    </div>
+                  </div>
+                  <div id="block-29" class="block">
+                    <div class="block_content">
+                      
+                    </div>
+                  </div>
+                  <div id="block-10" class="block">
+                    <div class="block_content">
+                      
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+         
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-12-mobile is-3-desktop">
+              <p class="logo">
+                <span>Arm</span><span class="t2">Code</span>
+              </p>
+              <p>Гл. редактор: Էրիկ Էգնատոսյան</p>
+              <address>vlad@webref.ru</address>
+            </div>
+            <section class="column is-12-mobile is-6-desktop">
+              <h3>О сайте</h3>
+              <p>
+                На сайте находятся справочники и учебные курсы по различным
+                веб-технологиям, а также руководства по вёрстке веб-страниц и
+                разработке мобильных приложений.
+              </p>
+            </section>
+            
+          </div>
+        </div>
+      </div>
+      
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="..\sites\all\themes\v4\js\ads.js"></script>
+    <script src="..\assets\js\js_uyMY7TM2FMjNzjMtdngp_jGTwQDjbgJGsoDMzta23sU.js"></script>
+    <script src="..\assets\js\js_pN-4qUrqNCyweCdGOFM2HvXOELRW2gQGM19DvArodSQ.js"></script>
+  </body>
+</html>

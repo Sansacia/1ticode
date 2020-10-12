@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="am">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="webref.ru"
+      href="sites\ref\search.xml"    />
+    <title>HTML-ի Բովանդակությունը!|ArmCode</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="HTML (HyperText Markup Language, язык разметки гипертекста) — это система вёрстки, которая определяет, как и какие элементы должны располагаться на веб-странице. Информация на сайте, способ её представления и оформления зависят исключительно от разработчика и тех целей, которые он перед собой ставит."    />
+    <link rel="image_src" href="assets\images\book\html5.png" />
+    <link
+      rel="stylesheet"
+      href="assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
+      media="screen"/>
+      
+  </head>
+  <body>
+    <header>
+      <div class="container"> 
+        <div class="columns is-vcentered is-multiline">
+          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
+            <a href="index.htm"
+              ><span class="t1">Web</span><span class="t2">Reference</span></a>
+          </div>                                                                         
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <nav id="navMenu" class="navbar">
+        <div class="container">
+          <ul class="menu">
+            <li><a href="index.htm">Գլխավոր</a></li>
+            <li class="dropdown">
+              <span>Հղումներ</span>
+              <ul>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              
+            
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="webref">
+      <div class="container breadcrumb">
+        <section class="region region-crumbs">
+          <div id="easy_breadcrumb-easy_breadcrumb" class="block">
+            <div class="block_content">
+              <div
+                itemscope=""
+                class="easy-breadcrumb"
+                itemtype="http://data-vocabulary.org/Breadcrumb"              >
+                <span itemprop="title"
+                  ><a
+                    href="index.htm"
+                    class="easy-breadcrumb_segment easy-breadcrumb_segment-front"
+                    >Հղումներ</a></span>
+                <span class="easy-breadcrumb_segment-separator"></span>
+                <span
+                  class="easy-breadcrumb_segment easy-breadcrumb_segment-title"
+                  itemprop="title"
+                  >HTML-ի Բովանդակությունը!</span               >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <div class="columns is-variable is-4 is-multiline">
+          <div
+            class="column is-12-mobile is-12-tablet is-9-desktop content-section"
+            id="webref-main"
+          >
+            <section class="region region-adv-top">
+              <div id="block-27" class="block">
+                <div class="block_content">
+                  <script
+                    async=""
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                  ></script>
+                  <ins
+                    class="adsbygoogle"
+                    style="display: block;"
+                    data-ad-client="ca-pub-0708135098984815"
+                    data-ad-slot="1599783371"
+                    data-ad-format="horizontal"
+                    data-full-width-responsive="true"
+                  ></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+              </div>
+            </section>
+            <div class="title"><h1>HTML-ի Բովանդակությունը!</h1></div>
+            <div id="example-form"></div>
+            <section class="region region-content">
+              <div id="system-main" class="block">
+                <div class="block_content">
+                  <div id="tag-filter">
+                    Նշանակում:
+                    <span class="t-html5"><i></i> HTML5-ի Տարրերը</span>
+                    <span class="t-nonstandart"
+                      ><i></i> Ոչ ստանդարտ կամ արժեզրկված իրերը (<strong
+                        >Մի օգտագործեք!</strong
+                      >)</span
+                    >
+                  </div>
+                  <div id="v-ref-html">
+                    <input
+                      v-model="searchHTML"
+                      placeholder="Быстрый поиск элемента"
+                      class="input"
+                    />
+                    <ul class="tag-alpha">
+                      <li v-for="key in getKeys()" v-if="isShow(key)">
+                        <a :href="'#'+key">{{getTitleByKey(key)}}</a>
+                      </li>
+                    </ul>
+                    <section
+                      v-for="key in getKeys()"
+                      v-if="isShow(key)"
+                      class="columns is-multiline"
+                      v-cloak=""
+                    >
+                      <div
+                        class="html-heading column is-12-mobile is-12-tablet is-1-desktop"
+                      >
+                        <h3 :id="key">{{getTitleByKey(key)}}</h3>
+                      </div>
+                      <ul
+                        class="html-col column is-12-mobile is-12-tablet is-11-desktop"
+                      >
+                      
+                        <li
+                          v-for="element in getElementFiltered(key)"
+                          :class="element.type"
+                        >
+                          <a :href="element.link" :title="element.descr"
+                            >{{element.tag}}</a
+                          >
+                        </li>
+                      </ul>
+                    </section>
+                  </div>                  
+                      <h2 class="element-invisible">Автор и редакторы</h2>
+                      
+                        <i class="icon-user"></i> Հեղինակներ: Էրիկ Էգնատոսյան,Էրիկ Նալբանդյան,Նարեկ Ալվանդյան
+                      </div>
+                      
+                        <i class="icon-calendar"></i> Վերջին փոփոխությունը:
+                        13.03.2020
+                      </div>
+                      
+                        
+                      </div>
+                    </div>
+                  </section>
+                  <div id="block-20" class="block">
+                    <div class="block_content">
+                      <script
+                        async=""
+                        src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                      ></script>
+                      <ins
+                        class="adsbygoogle"
+                        style="display: block;"
+                        data-ad-client="ca-pub-0708135098984815"
+                        data-ad-slot="1599783371"
+                        data-full-width-responsive="true"
+                        data-ad-format="horizontal"
+                      ></ins>
+                      <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                      </script>
+                    </div>
+                  </div>
+                  <div id="block-29" class="block">
+                    <div class="block_content">
+                      <a
+                        href="https://codeformyself.com/invite/?gcao=11470&gcpc=0c004"
+                        rel="nofollow"
+                        ></a>
+                    </div>
+                  </div>
+                  <div id="block-10" class="block">
+                    <div class="block_content">
+                        
+                      <script>
+                        var disqus_shortname = "webref";
+                        (function () {
+                          var dsq = document.createElement("script");
+                          dsq.type = "text/javascript";
+                          dsq.async = true;
+                          dsq.src =
+                            "//" + disqus_shortname + ".disqus.com/embed.js";
+                          (
+                            document.getElementsByTagName("head")[0] ||
+                            document.getElementsByTagName("body")[0]
+                          ).appendChild(dsq);
+                        })();
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+                <div class="block_content">
+                  <w-autocomplete
+                    :suggestions="suggestions"
+                    v-model="value"
+                  ></w-autocomplete>
+                </div>
+              </div>
+           <div class="block_content">           
+                </div>
+              </div>            
+              <div id="block-13" class="block">
+                <div class="block_content">
+                  <script
+                    async=""
+                    src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                  ></script>
+                  <ins
+                    class="adsbygoogle"
+                    style="display: inline-block; width: 240px; height: 400px;"
+                    data-ad-client="ca-pub-0708135098984815"
+                    data-ad-slot="6456026170"
+                  ></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+              </div>                
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-12-mobile is-3-desktop">
+              <p class="logo">
+                <span>Web</span><span class="t2">Reference</span>
+              </p>
+              <p>Գլխավոր խմբագիր: Էրիկ Էգնատոսյան</p>
+              <address>vlad@webref.ru</address>
+            </div>
+            <section class="column is-12-mobile is-6-desktop">
+              <h3>Կայքի մասին</h3>
+              <p>
+                На сайте находятся справочники и учебные курсы по различным
+                веб-технологиям, а также руководства по вёрстке веб-страниц и
+                разработке мобильных приложений.
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+     
+        <div class="container">
+          <div class="columns">                                      
+            </section>           
+            </section>
+          </div>
+        </div>
+      </div>  
+        <div class="container">     
+        </div>
+      </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="sites\all\themes\v4\js\ads.js"></script>
+    <script src="assets\js\js_wj-Dv_OFlNQ6Myr4QgcymTs8vLnMDqLGUfV21kB1So4.js"></script>
+    <script src="assets\js\js_pN-4qUrqNCyweCdGOFM2HvXOELRW2gQGM19DvArodSQ.js"></script>
+  </body>
+</html>

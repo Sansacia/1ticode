@@ -1,0 +1,1163 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="webref.ru"
+      href="sites\ref\search.xml"
+    />
+    <title>Справочник CSS | WebReference</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Стилем или CSS (Cascading Style Sheets, каскадные таблицы стилей) называется набор параметров форматирования, который применяется к элементам документа, чтобы изменить их внешний вид."
+    />
+    <link rel="image_src" href="assets\images\book\css.png" />
+    <link
+      rel="stylesheet"
+      href="assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="columns is-vcentered is-multiline">
+          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
+            <a href="index.htm"
+              ><span class="t1">Web</span><span class="t2">Reference</span></a
+            >
+          </div>          
+              <div class="field has-addons">                                  
+                </div>                
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <nav id="navMenu" class="navbar">
+        <div class="container">
+          <ul class="menu">
+            <li><a href="index.htm">Главная</a></li>
+            <li class="dropdown">
+              <span>Справочники</span>
+              <ul>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">                          
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="webref">
+      <div class="container breadcrumb">
+        <section class="region region-crumbs">
+          <div id="easy_breadcrumb-easy_breadcrumb" class="block">
+            <div class="block_content">
+              <div
+                itemscope=""
+                class="easy-breadcrumb"
+                itemtype="http://data-vocabulary.org/Breadcrumb"
+              >
+                <span itemprop="title"
+                  ><a
+                    href="index.htm"
+                    class="easy-breadcrumb_segment easy-breadcrumb_segment-front"
+                    >Главная</a
+                  ></span
+                >
+                <span class="easy-breadcrumb_segment-separator"></span>
+                <span
+                  class="easy-breadcrumb_segment easy-breadcrumb_segment-title"
+                  itemprop="title"
+                  >Справочник CSS</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <div class="columns is-variable is-4 is-multiline">
+          <div
+            class="column is-12-mobile is-12-tablet is-9-desktop content-section"
+            id="webref-main"
+          >
+            <section class="region region-adv-top">
+              <div id="block-27" class="block">
+                <div class="block_content">
+                  <script
+                    async=""
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                  ></script>
+                  <ins
+                    class="adsbygoogle"
+                    style="display: block;"
+                    data-ad-client="ca-pub-0708135098984815"
+                    data-ad-slot="1599783371"
+                    data-ad-format="horizontal"
+                    data-full-width-responsive="true"
+                  ></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+              </div>
+            </section>
+            <div class="title"><h1>Справочник CSS</h1></div>
+            <div id="example-form"></div>
+            <section class="region region-content">
+              <div id="system-main" class="block">
+                <div class="block_content">
+                  <div id="v-ref-css">
+                    <div>
+                      <input
+                        v-model="searchCSS"
+                        placeholder="Быстрый поиск свойства"
+                        class="input"
+                      />
+                    </div>
+                    <ul class="tag-alpha">
+                      <li><a href="#!">!</a></li>
+                      <li><a href="#A">A</a></li>
+                      <li><a href="#B">B</a></li>
+                      <li><a href="#C">C</a></li>
+                      <li><a href="#DE">D, E</a></li>
+                      <li><a href="#F">F</a></li>
+                      <li><a href="#HIJ">H, I, J</a></li>
+                      <li><a href="#L">L</a></li>
+                      <li><a href="#M">M</a></li>
+                      <li><a href="#O">O</a></li>
+                      <li><a href="#P">P</a></li>
+                      <li><a href="#QRS">Q, R, S</a></li>
+                      <li><a href="#T">T</a></li>
+                      <li><a href="#UV">U, V</a></li>
+                      <li><a href="#W">W</a></li>
+                      <li><a href="#Z">Z</a></li>
+                      <li><a href="#@">@</a></li>
+                      <li><a href="#selectors">Селекторы</a></li>
+                      <li><a href="#pseudo-class">Псевдоклассы</a></li>
+                      <li><a href="#pseudo-elements">Псевдоэлементы</a></li>
+                      <li><a href="#value">Значения</a></li>
+                      <li><a href="#function">Функции</a></li>
+                      <li><a href="#unit">Единицы</a></li>
+                    </ul>
+                    <section
+                      v-for="key in getKeys()"
+                      v-if="isShow(key)"
+                      class="columns is-multiline"
+                      v-cloak=""
+                    >
+                      <div
+                        class="html-heading column is-12-mobile is-12-tablet is-1-desktop"
+                      >
+                        <h3 :id="key">{{getTitleByKey(key)}}</h3>
+                      </div>
+                      <ul
+                        class="html-col column is-12-mobile is-12-tablet is-11-desktop"
+                      >
+                        <li v-for="element in getElementFiltered(key)">
+                          <a
+                            :href="'/css/'+element.property+'.html' "
+                            :title="element.descr"
+                            >{{element.property}}</a
+                          >
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                  <h2 id="@">@-правила</h2>
+                  <ul class="css-col">
+                    <li>
+                      <a
+                        href="css\charset.html"
+                        title="Применяется для задания кодировки внешнего CSS-файла"
+                        >@charset</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\document.html"
+                        title="@document устанавливает стилевые правила на основе адреса документа"
+                        >@document</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\font-face.html"
+                        title="Определяет настройки шрифтов, а также позволяет загрузить специфичный шрифт на компьютер пользователя"
+                        >@font-face</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\import.html"
+                        title="Позволяет импортировать содержимое CSS-файла в текущую стилевую таблицу"
+                        >@import</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\keyframes.html"
+                        title="Устанавливает ключевые кадры при анимации элемента"
+                        >@keyframes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\media.html"
+                        title="Указывает тип носителя, для которого будет применяться указанный стиль"
+                        >@media</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\page.html"
+                        title="Задаёт значение полей при печати документа"
+                        >@page</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\supports.html"
+                        title="Позволяет проверить, поддерживает браузер ту или иную возможность, и на основе этого создать набор стилевых правил"
+                        >@supports</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\viewport.html"
+                        title="Позволяет оптимизировать макет веб-страницы в зависимости от различных устройств и их размеров"
+                        >@viewport</a
+                      >
+                    </li>
+                  </ul>
+                  <h2 id="selectors">Селекторы и их комбинации</h2>
+                  <ul class="css-col">
+                    <li><a href="css\selector\tag.html">A</a></li>
+                    <li><a href="css\selector\id.html">#id</a></li>
+                    <li><a href="css\selector\class.html">.class</a></li>
+                    <li>
+                      <a href="css\selector\multiclass.html">.class1.class2</a>
+                    </li>
+                    <li><a href="css\selector\universal.html">*</a></li>
+                    <li>
+                      <a href="css\selector\descendant.html">A &nbsp; B</a>
+                    </li>
+                    <li><a href="css\selector\child.html">A &gt; B</a></li>
+                    <li><a href="css\selector\adjacent.html">A + B</a></li>
+                    <li><a href="css\selector\sibling.html">A ~ B</a></li>
+                    <li><a href="css\selector\attr.html">[attr]</a></li>
+                    <li>
+                      <a href="css\selector\attr2.html">[attr='value']</a>
+                    </li>
+                    <li>
+                      <a href="css\selector\attr3.html">[attr^='value']</a>
+                    </li>
+                    <li>
+                      <a href="css\selector\attr4.html">[attr$='value']</a>
+                    </li>
+                    <li>
+                      <a href="css\selector\attr5.html">[attr*='value']</a>
+                    </li>
+                    <li>
+                      <a href="css\selector\attr6.html">[attr~='value']</a>
+                    </li>
+                    <li>
+                      <a href="css\selector\attr7.html">[attr|='value']</a>
+                    </li>
+                  </ul>
+                  <h2 id="pseudo-class">Псевдоклассы</h2>
+                  <ul class="css-col">
+                    <li>
+                      <a
+                        href="css\active.html"
+                        title="Определяет стиль активного элемента"
+                        >:active</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\blank.html"
+                        title="Представляет пустые элементы, т. е. те, которые не содержат дочерних элементов или текста"
+                        >:blank</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\checked.html"
+                        title="Применяется к элементам интерфейса, таким как переключатели (checkbox) и флажки (radio), когда они находятся в положение «включено»"
+                        >:checked</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\default.html"
+                        title="Применяет стиль к элементам форм, которые установлены по умолчанию в группе похожих элементов"
+                        >:default</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\disabled.html"
+                        title="Применяет стиль к заблокированным элементам форм"
+                        >:disabled</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\empty.html"
+                        title="Представляет пустые элементы, т. е. те, которые не содержат дочерних элементов, текста, пробелов или переноса строк"
+                        >:empty</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\enabled.html"
+                        title="Используется для применения стиля к доступным (не заблокированным) элементам форм"
+                        >:enabled</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\first-child.html"
+                        title="Применяет стилевое оформление к первому дочернему элементу своего родителя"
+                        >:first-child</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\first-of-type.html"
+                        title="Задаёт правила стилей для первого элемента указанного типа"
+                        >:first-of-type</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\focus.html"
+                        title="Определяет стиль для элемента, получающего фокус"
+                        >:focus</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\focus-within.html"
+                        title="Определяет стиль элемента, когда он сам или элементы внутри него получают фокус"
+                        >:focus-within</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\fullscreen.html"
+                        title="Псевдокласс :fullscreen применяется к элементам, когда браузер находится в полноэкранном режиме"
+                        >:fullscreen</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\hover.html"
+                        title="Определяет стиль элемента при наведении на него курсора мыши"
+                        >:hover</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\in-range.html"
+                        title="Применяется к элементам форм, у которых введённое пользователем значение находится в заранее заданном диапазоне"
+                        >:in-range</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\indeterminate.html"
+                        title="Задаёт стиль для элементов форм, таким как флажки и переключатели, когда они находятся в неопределённом состоянии"
+                        >:indeterminate</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\invalid.html"
+                        title="Применяется к полям формы, содержимое которых не соответствует указанному типу"
+                        >:invalid</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\lang.html"
+                        title="Определяет язык, который используется в документе или его фрагменте"
+                        >:lang</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\last-child.html"
+                        title="Задаёт стилевое оформление последнего элемента своего родителя"
+                        >:last-child</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\last-of-type.html"
+                        title="Задаёт правила стилей для последнего элемента определённого типа"
+                        >:last-of-type</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\link.html"
+                        title="Применяется к ссылкам, которые ещё не посещались пользователем"
+                        >:link</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\not.html"
+                        title="Задаёт правила стилей для элементов, которые не содержат указанный селектор"
+                        >:not</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\nth-child.html"
+                        title="Используется для добавления стиля к элементам на основе нумерации в дереве элементов"
+                        >:nth-child</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\nth-last-child.html"
+                        title="Используется для добавления стиля к элементам на основе нумерации в дереве элементов"
+                        >:nth-last-child</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\nth-last-of-type.html"
+                        title="Используется для добавления стиля к элементам указанного типа на основе нумерации в дереве элементов"
+                        >:nth-last-of-type</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\nth-of-type.html"
+                        title="Используется для добавления стиля к элементам указанного типа на основе нумерации в дереве элементов"
+                        >:nth-of-type</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\only-child.html"
+                        title="Применяется к дочерним элементам, только если он единственный у родителя"
+                        >:only-child</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\only-of-type.html"
+                        title="Применяется к дочерним элементам указанного типа, только если он единственный у родителя"
+                        >:only-of-type</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\optional.html"
+                        title="Применяет стилевые правила к полю формы, у которого не задан атрибут required"
+                        >:optional</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\out-of-range.html"
+                        title="Применяется к полям форм, у которых введённое пользователем значение выходит из заданного диапазона"
+                        >:out-of-range</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\placeholder-shown.html"
+                        title="Определяет стиль элемента input или textarea, который в данный момент отображает текст подсказки, заданной атрибутом placeholder"
+                        >:placeholder-shown</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\read-only.html"
+                        title="Применяется к полям формы, у которых задан атрибут readonly"
+                        >:read-only</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\read-write.html"
+                        title="Применяется к полям формы, доступных для изменения"
+                        >:read-write</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\required.html"
+                        title="Применяет стилевые правила к элементу input, у которого установлен атрибут required"
+                        >:required</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\root.html"
+                        title="Определяет корневой элемент документа"
+                        >:root</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\target.html"
+                        title="Применяется к целевому элементу, иными словами, к идентификатору, который указан в адресной строке браузера"
+                        >:target</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\valid.html"
+                        title="Применяется к полям формы, содержимое которых проходит проверку в браузере на соответствие указанному типу"
+                        >:valid</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\visited.html"
+                        title="Применяется к ссылкам, уже посещённым пользователем, и задаёт для них стилевое оформление"
+                        >:visited</a
+                      >
+                    </li>
+                  </ul>
+                  <h2 id="pseudo-elements">Псевдоэлементы</h2>
+                  <ul class="css-col">
+                    <li>
+                      <a
+                        href="css\after.html"
+                        title="Используется для вывода желаемого контента после содержимого элемента, к которому он добавляется"
+                        >::after</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\backdrop.html"
+                        title="Обычно применяется для затемнения страницы, чтобы акцентировать внимание на фотографии или диалоговом окне"
+                        >::backdrop</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\before.html"
+                        title="Используется для вывода желаемого контента до содержимого элемента, к которому он добавляется"
+                        >::before</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\first-letter.html"
+                        title="Определяет стиль первого символа в тексте элемента, к которому добавляется"
+                        >::first-letter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\first-line.html"
+                        title="Задаёт стиль первой строки форматированного текста"
+                        >::first-line</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\placeholder.html"
+                        title="Задаёт стилевое оформление подсказывающего текста, созданного атрибутом placeholder"
+                        >::placeholder</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\selection.html"
+                        title="Применяет стиль к выделенному пользователем фрагменту текста"
+                        >::selection</a
+                      >
+                    </li>
+                  </ul>
+                  <h2>Вендорные свойства, псевдоклассы, псевдоэлементы</h2>
+                  <p>
+                    Эти свойства работают только в определённых браузерах.
+                    Префикс -moz- для Firefox, -ms- для Internet Explorer,
+                    -webkit- для Chrome и Safari, -o- для Opera.
+                  </p>
+                  <ul class="css-col">
+                    <li>
+                      <a
+                        href="css\orient.html"
+                        title="Устанавливает положение индикатора прогресса — горизонтальное или вертикальное"
+                        >-moz-orient</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-interpolation-mode.html"
+                        title="Указывает браузеру, какой алгоритм использовать при масштабировании картинок"
+                        >-ms-interpolation-mode</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-browse.html"
+                        title="Позволяет задать стиль кнопки «Обзор» при загрузке файлов"
+                        >::-ms-browse</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-check.html"
+                        title="Задаёт стиль переключателей и флажков"
+                        >::-ms-check</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-clear.html"
+                        title="Задаёт стиль кнопки для очистки текстового поля"
+                        >::-ms-clear</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-expand.html"
+                        title="Задаёт стиль кнопки раскрытия списка формы"
+                        >::-ms-expand</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-fill.html"
+                        title="Задаёт стиль индикатора прогресса"
+                        >::-ms-fill</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-fill-lower.html"
+                        title="Задаёт стилевые параметры слайдера"
+                        >::-ms-fill-lower</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-fill-upper.html"
+                        title="Задаёт стилевые параметры слайдера"
+                        >::-ms-fill-upper</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-reveal.html"
+                        title="Задаёт стиль кнопки для просмотра пароля в поле формы"
+                        >::-ms-reveal</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-thumb.html"
+                        title="Задаёт стиль ползунка для слайдера"
+                        >::-ms-thumb</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-ticks-after.html"
+                        title="Применяет стилевые параметры к делениям ниже дорожки слайдера"
+                        >::-ms-ticks-after</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-ticks-before.html"
+                        title="Применяет стилевые параметры к делениям выше дорожки слайдера"
+                        >::-ms-ticks-before</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-tooltip.html"
+                        title="Применяет стилевые параметры к всплывающей подсказке слайдера"
+                        >::-ms-tooltip</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-track.html"
+                        title="Задаёт стиль дорожки ползунка для слайдера"
+                        >::-ms-track</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\ms-value.html"
+                        title="Позволяет изменять стиль элементов формы"
+                        >::-ms-value</a
+                      >
+                    </li>
+                  </ul>
+                  <h2 id="value">Значения свойств</h2>
+                  <ul class="css-col">
+                    <li>
+                      <a href="css\value\currentColor.html">currentColor</a>
+                    </li>
+                    <li><a href="css\value\inherit.html">inherit</a></li>
+                    <li><a href="css\value\initial.html">initial</a></li>
+                    <li><a href="css\value\unset.html">unset</a></li>
+                    <li><a href="css\value\url.html">Адрес</a></li>
+                    <li><a href="css\value\time.html">Время</a></li>
+                    <li><a href="css\value\media.html">Медиа-запросы</a></li>
+                    <li><a href="css\value\percent.html">Проценты</a></li>
+                    <li><a href="css\value\size.html">Размер</a></li>
+                    <li><a href="css\value\string.html">Строка</a></li>
+                    <li><a href="css\value\angle.html">Угол</a></li>
+                    <li><a href="css\value\filter.html">Фильтр</a></li>
+                    <li><a href="css\value\color.html">Цвет</a></li>
+                    <li><a href="css\value\number.html">Число</a></li>
+                  </ul>
+                  <h2 id="function">Функции</h2>
+                  <ul class="css-col">
+                    <li>
+                      <a
+                        href="css\value\attr.html"
+                        title="Применяется для добавления значения атрибута HTML-элемента в стилевое свойство"
+                        >attr()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\blur.html"
+                        title="Задаёт размытие изображения или текста по Гауссу"
+                        >blur()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\brightness.html"
+                        title="Повышает или понижает яркость изображения"
+                        >brightness()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\calc.html"
+                        title="Используется для указания вычисляемого значения свойств, которые в качестве значений используют размер, угол, время, число"
+                        >calc()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\clamp.html"
+                        title="Задаёт предпочитаемое значение, а также его нижнюю и верхнюю границы"
+                        >clamp()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\contrast.html"
+                        title="Повышает или понижает контрастность изображения"
+                        >contrast()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\drop-shadow.html"
+                        title="Добавляет тень к изображению с учётом его прозрачных участков"
+                        >drop-shadow()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\grayscale.html"
+                        title="Превращает изображение в чёрно-белое"
+                        >grayscale()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\hue-rotate.html"
+                        title="Изменяет цветность изображения за счёт поворота оттенка на цветовом круге"
+                        >hue-rotate()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\invert.html"
+                        title="Инвертирует цвета в изображении"
+                        >invert()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\linear-gradient.html"
+                        title="Создаёт линейный градиент"
+                        >linear-gradient()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\opacity.html"
+                        title="Задаёт степень прозрачности изображениям"
+                        >opacity()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\perspective.html"
+                        title="Задаёт значение перспективы для трёхмерных трансформаций с элементом"
+                        >perspective()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\radial-gradient.html"
+                        title="Добавляет радиальный градиент"
+                        >radial-gradient()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\repeating-linear-gradient.html"
+                        title="Создаёт повторяющийся линейный градиент"
+                        >repeating-linear-gradient()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\repeating-radial-gradient.html"
+                        title="Создаёт повторяющийся радиальный градиент"
+                        >repeating-radial-gradient()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\rotate.html"
+                        title="Поворачивает элемент в двумерном пространстве на заданный угол относительно точки трансформации"
+                        >rotate()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\rotatex.html"
+                        title="Поворачивает элемент на заданный угол относительно оси X"
+                        >rotateX()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\rotatey.html"
+                        title="Поворачивает элемент на заданный угол относительно оси Y"
+                        >rotateY()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\rotatez.html"
+                        title="Поворачивает элемент на заданный угол относительно оси Z"
+                        >rotateZ()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\saturate.html"
+                        title="Изменяет насыщенность цветов в изображении"
+                        >saturate()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\sepia.html"
+                        title="Превращает изображение в сепию"
+                        >sepia()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\scale.html"
+                        title="Масштабирует элемент по горизонтали и вертикали"
+                        >scale()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\scalex.html"
+                        title="Масштабирует элемент по горизонтали"
+                        >scaleX()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\scaley.html"
+                        title="Масштабирует элемент по вертикали"
+                        >scaleY()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\scalez.html"
+                        title="Масштабирует элемент по оси Z"
+                        >scaleZ()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\skew.html"
+                        title="Наклоняет элемент на заданный угол по горизонтали и вертикали"
+                        >skew()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\skewx.html"
+                        title="Наклоняет элемент на заданный угол по горизонтали"
+                        >skewX()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\skewy.html"
+                        title="Наклоняет элемент на заданный угол по вертикали"
+                        >skewY()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\translate.html"
+                        title="Сдвигает элемент на заданное значение по горизонтали и вертикали"
+                        >translate()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\translatex.html"
+                        title="Сдвигает элемент по горизонтали на указанное значение"
+                        >translateX()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\translatey.html"
+                        title="Сдвигает элемент по вертикали на указанное значение"
+                        >translateY()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\translatez.html"
+                        title="Сдвигает элемент по оси Z на указанное значение"
+                        >translateZ()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="css\value\var.html"
+                        title="Вставляет значения пользовательских переменных в значения стилевых свойств"
+                        >var()</a
+                      >
+                    </li>
+                  </ul>
+                  <h2 id="unit">Единицы</h2>
+                  <h4>Размер</h4>
+                  <ul class="css-col">
+                    <li><a href="css\unit\ch.html">ch</a></li>
+                    <li><a href="css\unit\cm.html">cm</a></li>
+                    <li><a href="css\unit\em.html">em</a></li>
+                    <li><a href="css\unit\ex.html">ex</a></li>
+                    <li><a href="css\unit\in.html">in</a></li>
+                    <li><a href="css\unit\mm.html">mm</a></li>
+                    <li><a href="css\unit\pc.html">pc</a></li>
+                    <li><a href="css\unit\pt.html">pt</a></li>
+                    <li><a href="css\unit\px.html">px</a></li>
+                    <li><a href="css\unit\rem.html">rem</a></li>
+                    <li><a href="css\unit\vh.html">vh</a></li>
+                    <li><a href="css\unit\vmax.html">vmax</a></li>
+                    <li><a href="css\unit\vmin.html">vmin</a></li>
+                    <li><a href="css\unit\vw.html">vw</a></li>
+                  </ul>
+                  <h4>Угол</h4>
+                  <ul class="css-col">
+                    <li><a href="css\unit\deg.html">deg</a></li>
+                    <li><a href="css\unit\grad.html">grad</a></li>
+                    <li><a href="css\unit\rad.html">rad</a></li>
+                    <li><a href="css\unit\turn.html">turn</a></li>
+                  </ul>
+                  <h4>Время</h4>
+                  <ul class="css-col">
+                    <li><a href="css\unit\s.html">s</a></li>
+                    <li><a href="css\unit\ms.html">ms</a></li>
+                  </ul>
+                  <h4>Разрешение</h4>
+                  <ul class="css-col">
+                    <li><a href="css\unit\dpi.html">dpi</a></li>
+                    <li><a href="css\unit\dpcm.html">dpcm</a></li>
+                    <li><a href="css\unit\dppx.html">dppx</a></li>
+                  </ul>
+                  
+                  
+                  <section class="container credit">
+                    <div class="columns is-multiline">
+                      <h2 class="element-invisible">Автор и редакторы</h2>
+                      <div class="column is-6 credit-author">
+                        <i class="icon-user"></i> Авторы: Erik Egnatosyan,Erik Nalbandyan,Narek Alvandyan 
+                      </div>
+                      <div class="column is-6 credit-changed">
+                        <i class="icon-calendar"></i> Последнее изменение:
+                        03.04.2020
+                      </div>
+                      <div class="column is-12 credit-editor">
+                       
+                      </div>
+                    </div>
+                  </section>
+                  <div id="block-20" class="block">
+                    <div class="block_content">
+                      <script
+                        async=""
+                        src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                      ></script>
+                      <ins
+                        class="adsbygoogle"
+                        style="display: block;"
+                        data-ad-client="ca-pub-0708135098984815"
+                        data-ad-slot="1599783371"
+                        data-full-width-responsive="true"
+                        data-ad-format="horizontal"
+                      ></ins>
+                      <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                      </script>
+                    </div>
+                  </div>
+                  <div id="block-29" class="block">
+                    
+                    </div>
+                  </div>
+                  <div id="block-10" class="block">
+                    
+                     
+                      <script>
+                        var disqus_shortname = "webref";
+                        (function () {
+                          var dsq = document.createElement("script");
+                          dsq.type = "text/javascript";
+                          dsq.async = true;
+                          dsq.src =
+                            "//" + disqus_shortname + ".disqus.com/embed.js";
+                          (
+                            document.getElementsByTagName("head")[0] ||
+                            document.getElementsByTagName("body")[0]
+                          ).appendChild(dsq);
+                        })();
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          
+            
+              <div id="block-14" class="block">
+                <div class="block_content"></div>
+                  <w-autocomplete
+                    :suggestions="suggestions"
+                    v-model="value"
+                  ></w-autocomplete>
+                </div>
+            </div>
+              </div>
+              
+                
+                
+                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="block-13" class="block">
+                <div class="block_content">
+                  <script
+                    async=""
+                    src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                  ></script>
+                  <ins
+                    class="adsbygoogle"
+                    style="display: inline-block; width: 240px; height: 400px;"
+                    data-ad-client="ca-pub-0708135098984815"
+                    data-ad-slot="6456026170"
+                  ></ins>
+                  <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-12-mobile is-3-desktop">
+              <p class="logo">
+                <span>Web</span><span class="t2">Reference</span>
+              </p>
+              <p>Гл. редактор: Erik Egnatosyan</p>
+              <address>vlad@webref.ru</address>
+            </div>
+            <section class="column is-12-mobile is-6-desktop">
+              <h3>О сайте</h3>
+              <p>
+                На сайте находятся справочники и учебные курсы по различным
+                веб-технологиям, а также руководства по вёрстке веб-страниц и
+                разработке мобильных приложений.
+              </p>
+            </section>
+            
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+          </div>
+        </div>
+      </div>
+      
+        <div class="container">
+          
+        </div>
+      </div>
+      
+        <div class="container">
+          <div class="columns">
+            
+              
+            </div>
+            
+             
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="sites\all\themes\v4\js\ads.js"></script>
+    <script src="assets\js\js_Xu9IDQmnIMdEU1bTlJOzqPd9CNLcCP-crqypRE6L69A.js"></script>
+    <script src="assets\js\js_pN-4qUrqNCyweCdGOFM2HvXOELRW2gQGM19DvArodSQ.js"></script>
+  </body>
+</html>

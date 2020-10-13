@@ -4840,7 +4840,7 @@ p {
   margin: 0;
 }
 .data td {
-  vertical-align: top;
+  vertical-align: top;  
 }
 #system-main a.ext::after,#system-main a[href*="//"]::after
 {

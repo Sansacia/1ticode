@@ -124,19 +124,11 @@
                 <div class="block_content">
                   
                   <p>
-                    Элемент <span class="tag">&lt;bgsound&gt;</span> (от англ.
-                    <i>background sound</i>&nbsp;— фоновая музыка) определяет
-                    музыкальный файл, который будет проигрываться на
-                    веб-странице при её открытии. Громкость, продолжительность
-                    звучания музыки и другие характеристики определяются с
-                    помощью атрибутов, а также могут управляться через скрипты.
-                    Этот элемент должен размещаться только в контейнере
-                    <a href="head.html">&lt;head&gt;</a>.
+                    <span class="tag">&lt;Bgsound&gt;</span> տարրը սահմանում է երաժշտական ​​ֆայլ, որը կբացվի ինտերնետում, երբ էջը բացվի: Երաժշտության ձայնը, տևողությունը և այլ բնութագրերը որոշվում են ատրիբուտների(հատկանիշերի) միջոցով, և դրանք կարող են նաև կառավարվել կոդի միջոցով: Այս տարրը պետք է տեղադրվի միայն 
+                    <a href="head.html">&lt;head&gt;</a>-ի մեջ:
                   </p>
                   <p class="note">
-                    <span class="tag">&lt;bgsound&gt;</span> не входит в
-                    спецификацию HTML и при его использовании код не пройдёт
-                    валидацию. Вместо него используйте
+                    <span class="tag">&lt;Bgsound&gt;</span>-ը այլևս չի մտնում HTML-ի մեջ և օգտագործման դեպքում չի աշխատի: Փոխարենը օգտագործեք 
                     <a href="audio.html">&lt;audio&gt;</a>.
                   </p>
                   <div
@@ -148,7 +140,7 @@
                     <div class="field-items">
                       <div class="field-item even">
                         <pre><code data-language="html">&lt;head&gt;
-  &lt;bgsound атрибуты&gt;
+  &lt;bgsound հատկանիշներ&gt;
 &lt;/head&gt;</code></pre>
                       </div>
                     </div>
@@ -172,18 +164,16 @@
                         <dl class="param">
                           <dt><a href="bgsound\balance.html">balance</a></dt>
                           <dd>
-                            Управляет балансом звука между правой и левой
-                            колонками.
+                            Կարգավորում է աջ և ձախ բարձրախոսների բալանսը(հզորությունը):
                           </dd>
                           <dt><a href="bgsound\loop.html">loop</a></dt>
                           <dd>
-                            Устанавливает, сколько раз проигрывать музыкальный
-                            файл.
+                            Սահմանում է, թե քանի անգամ է նվագարկել երաժշտական ​​ֆայլը:
                           </dd>
                           <dt><a href="bgsound\src.html">src</a></dt>
-                          <dd>Путь к музыкальному файлу.</dd>
+                          <dd>Ճանապարհ դեպի երաժշտական ​​ֆայլ:</dd>
                           <dt><a href="bgsound\volume.html">volume</a></dt>
-                          <dd>Задаёт громкость звучания музыки.</dd>
+                          <dd>Սահմանում է երաժշտության ձայնի ձայնը:</dd>
                         </dl>
                       </div>
                     </div>
@@ -216,13 +206,11 @@
                     <div class="field-items">
                       <div class="field-item even">
                         <p>
-                          В браузере Internet Explorer можно отключить
-                          возможность воспроизведения звуков в свойствах
-                          обозревателя. Для этого во вкладке
-                          &laquo;Дополнительно&raquo; в блоке
-                          &laquo;Мультимедиа&raquo; уберите галочку у пункта
+                          Internet Explorer-ում դուք կարող եք անջատել ինտերնետի հատկություններում հնչյուններ նվագելու հնարավորությունը(обозревателя): Դա անելու համար 
+                          &laquo;Дополнительно&raquo; բլոկի
+                          &laquo;Мультимедиа&raquo; ներդիրում հանեք ստուգանիշը(галочка)
                           &laquo;Воспроизводить звуки на веб-страницах&raquo;
-                          (рис.&nbsp;1).
+                          կետը (Նկար 1):
                         </p>
                         <p class="fig">
                           <img
@@ -233,13 +221,10 @@
                           />
                         </p>
                         <p class="figsign">
-                          Рис. 1. Отключение звуков в настройках браузера
-                          Internet Explorer
+                          Նկար: 1. Internet Explorer բրաուզերի կարգավորումներում երաժշտության անջատում:
                         </p>
                         <p>
-                          В браузере Opera отключить звуки можно через меню
-                          Инструменты (рис.&nbsp;2). Настройка применяется после
-                          обновления страницы.
+                          Opera բրաուզերում դուք կարող եք անջատել հնչյունները Գործիքների ցանկի միջոցով (նկ. 2): Կարգավորումը կիրառվում է էջի թարմացումից հետո:
                         </p>
                         <p class="fig">
                           <img
@@ -250,13 +235,12 @@
                           />
                         </p>
                         <p class="figsign">
-                          Рис. 2. Отключение звука в браузере Opera
+                          Նկար: 2. Անջատման ձևը Opera բրաուզերում:
                         </p>
                         <p>
-                          Для автоматического воспроизведения музыки
-                          воспользуйтесь элементом
-                          <a href="audio.html">&lt;audio&gt;</a> с атрибутом
-                          <span class="attribute">autoplay</span>.<w-example
+                          Երաժշտություն ավտոմատ կերպով նվագարկելու համար օգտագործեք 
+                          <a href="audio.html">&lt;audio&gt;</a>  
+                          տարրը ` <span class="attribute">autoplay</span> հատկանիշով:<w-example
                             is-result="false"
                             >&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt;
                             &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -274,7 +258,7 @@
                     class="field field-name-field-html-browser field-type-text-long field-label-above"
                   >
                     <h2 class="block_title" id="field_html_browser">
-                      Браузеры
+                      Բրաուզերներ
                       <button @click="isHintBrowser=true" class="hint-ref">
                         <i class="icon-help"></i>
                       </button>

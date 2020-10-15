@@ -124,42 +124,33 @@
                 <div class="block_content">
                   
                   <p>
-                    Элемент <span class="tag">&lt;base&gt;</span> (от англ.
-                    <i>base</i>&nbsp;— база, основание) указывается внутри
-                    <a href="head.html">&lt;head&gt;</a> и инструктирует браузер
-                    относительно полного базового адреса текущего документа.
-                    <span class="tag">&lt;base&gt;</span> предназначен для
-                    документов, в которых используется относительный адрес и эти
-                    документы могут переноситься в другую папку или даже на
-                    другой компьютер без потери связи. Браузер ищет элемент
-                    <span class="tag">&lt;base&gt;</span>, определяет полный
-                    адрес документа и корректно загружает его. Например, если
-                    адрес документа указан как
+                    <span class="tag">&lt;Base&gt;</span> տարրը գտնվում է 
+                    <a href="head.html">&lt;head&gt;</a>-ի ներսում և զննարկիչին հրահանգում է ընթացիկ փաստաթղթի ամբողջական բազային հասցեի մասին:
+                    <span class="tag">&lt;Base&gt;</span>-ը այն փաստաթղթերի համար է, որոնք օգտագործում են հարաբերական հասցե, և այդ փաստաթղթերը կարող են փոխանցվել մեկ այլ թղթապանակ կամ նույնիսկ մեկ այլ համակարգիչ `առանց կապը կորցնելու: Բրաուզերը փնտրում է
+                    <span class="tag">&lt;base&gt;</span> տարրը,  որոշում է փաստաթղթի լրիվ հասցեն և ճիշտ քաղում է: Օրինակ, եթե
+                    փաստաթղթի հասցեն նշվում է որպես
                     <span class="var"
                       >&lt;base
-                      href=&quot;http://www.megasite.ru/hzchd/&quot;&gt;</span
-                    >, то при добавлении рисунков достаточно использовать
-                    относительный адрес
+                      href=&quot;http://https://www.freepik.com/free-photo/nice-business-desk-black-background_10148355.htm&quot;&gt;</span
+                    >, ապա պատկերներ ավելացնելիս բավական է օգտագործել հարաբերական հասցեն
                     <span class="var"
-                      >&lt;img src=&quot;images/labuda.gif&quot;&gt;</span
-                    >. При этом полный путь к изображению будет
+                      >&lt;img src=&quot;images/17902358.jpg&quot;&gt;</span
+                    >. Այս դեպքում պատկերի ամբողջական ուղին կլինի 
                     <span class="var"
-                      >http://www.megasite.ru/hzchd/images/labuda.gif</span
-                    >, что позволяет браузеру всегда находить графический файл,
-                    независимо от того, где находится текущая веб-страница.
-                    Также можно применять и иерархическую систему пути с двумя
-                    точками. Так, если изображение добавляется как
+                      >http://www.freepik.com/free-photo/nice-business-desk-black-background_10148355.htm/images/17902358.jpg</span
+                    >, ինչը թույլ է տալիս զննարկչին միշտ գտնել նկարի ֆայլը ՝ անկախ այն բանից, թե որտեղ է գտնվում ներկայիս ինտերնետային էջը:
+                    Կարող եք նաև օգտագործել հիերարխիկ երկու կետանոց ուղու համակարգ: Այսպիսով, եթե պատկերն ավելացվի որպես
                     <span class="var"
-                      >&lt;img src=&quot;../images/labuda.gif&quot;&gt;</span
-                    >, то полный путь к файлу будет
+                      >&lt;img src=&quot;../images/17902358.jpg&quot;&gt;</span
+                    >, ապա ֆայլի ամբողջական ուղին կլինի 
                     <span class="var"
-                      >http://www.megasite.ru/images/labuda.gif</span
-                    >.
+                      >http://www.freepik.com/images/17902358.jpg</span
+                    >:
                   </p>
                   <p>
-                    Второе применение элемента
+                    ?Второе применение элемента
                     <span class="tag">&lt;base&gt;</span>&nbsp;&#8212; задание
-                    целевого окна для всех ссылок на текущей странице.
+                    целевого окна для всех ссылок на текущей странице.?
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -170,7 +161,7 @@
                     <div class="field-items">
                       <div class="field-item even">
                         <pre><code data-language="html">&lt;head&gt;
-  &lt;base атрибуты&gt;
+  &lt;base հատկանիշներ&gt;
 &lt;/head&gt;</code></pre>
                       </div>
                     </div>
@@ -194,13 +185,11 @@
                         <dl class="param">
                           <dt><a href="base\href.html">href</a></dt>
                           <dd>
-                            Адрес, который должен использоваться для указания
-                            полного пути к файлам.
+                            Հասցե, որը կօգտագործվի ֆայլերի ամբողջական ուղին նշելու համար:
                           </dd>
                           <dt><a href="base\target.html">target</a></dt>
                           <dd>
-                            Имя окна или фрейма, куда будет загружаться
-                            документ, открываемый по ссылке.
+                            Պատուհանի կամ բլոկի անունը, որտեղ բեռնվելու է բաց հղումով փաստաթուղթը:
                           </dd>
                         </dl>
                       </div>
@@ -213,8 +202,7 @@
                     <div class="field-items">
                       <div class="field-item even">
                         <p>
-                          В данном примере все ссылки будут открываться в новой
-                          вкладке.
+                          Այս օրինակում բոլոր հղումները կբացվեն նոր էջում:
                         </p>
                         <w-example
                           >&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt;
@@ -238,10 +226,8 @@
                     <div class="field-items">
                       <div class="field-item even">
                         <p>
-                          Если на странице встречается несколько элементов
-                          <span class="tag">&lt;base&gt;</span>, то берётся
-                          значение атрибутов только у первого элемента,
-                          остальные игнорируются.
+                          Եթե ​​էջում կան մի քանի
+                          <span class="tag">&lt;base&gt;</span>տարրեր, ապա վերցվում է միայն առաջին տարրի հատկանիշի արժեքը, մնացածը անտեսվում են:
                         </p>
                       </div>
                     </div>

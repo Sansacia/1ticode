@@ -7146,3 +7146,11 @@ label.singlechoice-row {
     column-count: 2;
   }
 }
+::-webkit-scrollbar {width: 12px;height: 12px;}
+::-webkit-scrollbar-track-piece {background:rgba(0,0,0,0);}
+::-webkit-scrollbar-track-piece:vertical {background:#17191a;}
+::-webkit-scrollbar-track-piece:horizontal {background:#17191a;}
+::-webkit-scrollbar-thumb:vertical {height:10px;background: linear-gradient(-120deg, rgba(0,255,239,0.7) 0%, rgba(255,154,0,0.7) 100%) ;}
+::-webkit-scrollbar-thumb:vertical:hover {background:#71CA55;}
+::-webkit-scrollbar-thumb:horizontal {width:10px;background:#272c35;}
+::-webkit-scrollbar-thumb:horizontal:hover {background:#71CA55;}

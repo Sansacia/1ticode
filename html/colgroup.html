@@ -124,48 +124,30 @@
                 <div class="block_content">
                   
                   <p>
-                    Элемент <span class="tag">&lt;colgroup&gt;</span> (от англ.
-                    <i>column group</i>&nbsp;— группа колонок) предназначен для
-                    задания ширины и стиля одной или нескольких колонок таблицы.
-                    Этот элемент позволяет уменьшить код таблицы за счёт
-                    сокращения повторяющихся атрибутов, и при его наличии
-                    браузер начинает показывать содержимое таблицы, не дожидаясь
-                    её полной загрузки. Элемент
-                    <span class="tag">&lt;colgroup&gt; </span>можно использовать
-                    в комбинации с <a href="col.html">&lt;col&gt;</a>, который
-                    определяет характеристики одной или нескольких колонок.
+                    <span class="tag">&lt;Colgroup&gt;</span> տարրը նախատեսված է մեկ կամ ավելի աղյուսակների սյունների լայնությունը և տեսքը սահմանելու համար: Այս տարրը թույլ է տալիս կրճատել աղյուսակի կոդը `կրկնօրինակ հատկանիշները կրճատելով, և եթե այն առկա է, բրաուզերը սկսում է ցույց տալ աղյուսակի բովանդակությունը` առանց սպասելու, որ այն ամբողջությամբ բացվի:
+                    <span class="tag">&lt;colgroup&gt; </span> տարրը կարող է օգտագործվել <a href="col.html">&lt;col&gt;</a>-ի հետ համատեղ, որը սահմանում է մեկ կամ ավելի սյունակների բնութագրերը:
                   </p>
                   <p>
-                    Обычно закрывающий тег не требуется, но если
-                    <span class="tag">&lt;colgroup&gt;</span> выступает как
-                    контейнер для элементов <a href="col.html">&lt;col&gt;</a>,
-                    тогда следует добавить тег
-                    <span class="tag">&lt;/colgroup&gt;</span> в конце группы.
+                    Սովորաբար, վերջնական թեգ չի պահանջվում, բայց եթե 
+                    <span class="tag">&lt;colgroup&gt;</span>-ը հանդես է գալիս որպես <a href="col.html">&lt;col&gt;</a> տարր, ապա խմբի վերջում ավելացրեք
+                    <span class="tag">&lt;/colgroup&gt;</span> թեգը:
                   </p>
                   <p>
-                    Разница между свойствами
-                    <span class="tag">&lt;colgroup&gt; </span>и
-                    <a href="col.html">&lt;col&gt;</a> не очень велика и состоит
-                    в следующем.
-                    <span class="tag">&lt;colgroup&gt;</span> позволяет
-                    объединять колонки в определённые группы, также при
-                    добавлении атрибута <a href="table\rules.html">rules</a> со
-                    значением <span class="value">groups</span> к элементу
-                    <a href="table.html">&lt;table&gt;</a> браузер будет
-                    рисовать линию только между колонками, созданными с помощью
-                    <span class="tag">&lt;colgroup&gt;</span>. В остальных
-                    случаях поведение колонок назначенных через элементы
-                    <span class="tag">&lt;colgroup&gt;</span> и
-                    <a href="col.html">&lt;col&gt;</a> идентично.
+                    <span class="tag">&lt;Colgroup&gt; </span> և
+                    <a href="col.html">&lt;col&gt;</a> հատկությունների միջեւ տարբերությունը շատ մեծ չէ եւ հետեւյալն է:   
+                    <span class="tag">&lt;colgroup&gt;</span>-ը թույլ է տալիս միացնել սյունակները որոշակի խմբերի մեջ, ինչպես նաև<a href="table\rules.html">rules</a> հատկանիշը ավելացնելով 
+                    <span class="value">groups</span>արժեքը
+                    <a href="table.html">&lt;table&gt;</a> տարրին, բրաուզերը միայն
+                    <span class="tag">&lt;colgroup&gt;</span>-ի միջոցով ստեղծված սյունակների միջեւ գիծ է նկարելու: Մնացած դեպքերում 
+                    <span class="tag">&lt;colgroup&gt;</span> և
+                    <a href="col.html">&lt;col&gt;</a> տարրերի միջոցով նշանակված սյուների վարքագիծը նույնական է:
                   </p>
                   <p>
-                    Для <span class="tag">&lt;colgroup&gt;</span> допустимо
-                    использовать следующие стилевые свойства:
+                    Для <span class="tag">&lt;colgroup&gt;</span> -ի համար թույլատրելի է օգտագործել հետեւյալ ոճային հատկությունները:
                     <a href="..\css\border.html">border</a>,
                     <a href="..\css\background.html">background</a>,
                     <a href="..\css\width.html">width</a>,
-                    <a href="..\css\visibility.html">visibility</a>. Остальные
-                    свойства не оказывают никакого эффекта на элемент.
+                    <a href="..\css\visibility.html">visibility</a>: Մնացած հատկությունները չեն ունենա որևէ ազդեցություն.
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -201,34 +183,31 @@
                     <div class="field-items">
                       <div class="field-item even">
                         <dl class="param">
-                          <dt><a href="colgroup\align.html">align</a></dt>
+                          <dt><a href="col\align.html">align</a></dt>
                           <dd>
-                            Устанавливает выравнивание содержимого колонки по
-                            краю. <span class="attr-Obsolete"></span>
+                            Սահմանում է բովանդակության հավասարեցում սյունակի  եզրերով: <span class="attr-Obsolete"></span>
                           </dd>
-                          <dt><a href="colgroup\char.html">char</a></dt>
+                          <dt><a href="col\char.html">char</a></dt>
                           <dd>
-                            Выравнивает содержимое колонки по заданному символу.
+                            Սյունակի բովանդակությունը հավասարեցնում է նշված նիշին:
                             <span class="attr-Obsolete"></span>
                           </dd>
-                          <dt><a href="colgroup\charoff.html">charoff</a></dt>
+                          <dt><a href="col\charoff.html">charoff</a></dt>
                           <dd>
-                            Сдвигает содержимое ячейки относительно заданного
-                            символа. <span class="attr-Obsolete"></span>
+                            Տեղափոխում է նշված պարունակությունը նիշի համեմատ:<span class="attr-Obsolete"></span>
                           </dd>
-                          <dt><a href="colgroup\span.html">span</a></dt>
+                          <dt><a href="col\span.html">span</a></dt>
                           <dd>
-                            Количество колонок, к которым следует применять
-                            атрибуты.
+                            Սյունակների քանակը, որոնց վրա պետք է կիրառվեն պարամետրերը:
                           </dd>
-                          <dt><a href="colgroup\valign.html">valign</a></dt>
+                          <dt><a href="col\valign.html">valign</a></dt>
                           <dd>
-                            Задает вертикальное выравнивание содержимого
-                            колонки. <span class="attr-Obsolete"></span>
+                            Նշում է սյունակի բովանդակության ուղղահայաց հավասարումը: <span class="attr-Obsolete"></span>
                           </dd>
-                          <dt><a href="colgroup\width.html">width</a></dt>
+                          <dt><a href="col\width.html">width</a></dt>
                           <dd>
-                            Ширина колонок. <span class="attr-Obsolete"></span>
+                            Սյունակի լայնությունը:
+                            <span class="attr-Obsolete"></span>
                           </dd>
                         </dl>
                       </div>
@@ -272,7 +251,7 @@
                           &lt;/tr&gt; &lt;/table&gt; &lt;/body&gt;
                           &lt;/html&gt;</w-example
                         >
-                        <p>Результат данного примера показан на рис. 1.</p>
+                        <p>Այս օրինակի արդյունքը ներկայացված է Նկար 1-ում:</p>
                         <p class="fig">
                           <img
                             src="..\assets\images\html\tag_colgroup_1.png"
@@ -282,7 +261,7 @@
                           />
                         </p>
                         <p class="figsign">
-                          Рис. 1. Вид таблицы при использовании &lt;colgroup&gt;
+                          Նկար: 1. Աղյուսակի տեսքը &lt;colgroup&gt; օգտագործելիս:
                         </p>
                       </div>
                     </div>

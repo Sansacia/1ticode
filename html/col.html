@@ -122,38 +122,17 @@
             <section class="region region-content">
               <div id="system-main" class="block">
                 <div class="block_content">
-                  <ul class="toc">
-                    <li>
-                      Содержание
-                      <ul>
-                        <li><a href="#field_html_syntax">Синтаксис</a></li>
-                        <li><a href="#field_html_close">Закрывающий тег</a></li>
-                        <li><a href="#field_html_attr">Атрибуты</a></li>
-                        <li><a href="#field_html_example">Пример</a></li>
-                        <li><a href="#field_html_spec">Спецификация</a></li>
-                        <li><a href="#field_html_browser">Браузеры</a></li>
-                      </ul>
-                    </li>
-                  </ul>
                   <p>
-                    Элемент <span class="tag">&lt;col&gt;</span> (от англ.
-                    <i>column</i>&nbsp;— колонка) задаёт ширину и другие
-                    характеристики одной или нескольких колонок таблицы. При
-                    наличии этого элемента браузер начинает показывать
-                    содержимое таблицы, не дожидаясь её полной загрузки.
-                    <span class="tag">&lt;col&gt;</span> можно использовать
-                    совместно с элементом
-                    <a href="colgroup.html">&lt;colgroup&gt;</a>, который задаёт
-                    группу колонок, обладающих общими характеристиками.
+                    <span class="tag">&lt;Col&gt;</span> տարրը սահմանում է մեկ կամ ավելի աղյուսակի սյունների լայնությունը և այլ բնութագրերը: Եթե ​​այս տարրը առկա է, բրաուզերը սկսում է ցուցադրել աղյուսակի բովանդակությունը ՝ չսպասելով, որ այն ամբողջությամբ բացվի:
+                    <span class="tag">&lt;Col&gt;</span>-ը կարող է օգտագործվել 
+                    <a href="colgroup.html">&lt;colgroup&gt;</a> տարրի հետ համատեղ, որը սահմանում է ընդհանուր բնութագրեր ունեցող սյունակների խումբ:
                   </p>
                   <p>
-                    Для <span class="tag">&lt;col&gt;</span> допустимо
-                    использовать следующие стилевые свойства:
+                    Для <span class="tag">&lt;col&gt;</span>-ի համար թույլատրվում են ոճի հետևյալ հատկությունները. 
                     <a href="..\css\border.html">border</a>,
                     <a href="..\css\background.html">background</a>,
                     <a href="..\css\width.html">width</a>,
-                    <a href="..\css\visibility.html">visibility</a>. Остальные
-                    свойства не оказывают никакого эффекта на элемент.
+                    <a href="..\css\visibility.html">visibility</a>: Մնացած հատկությունները ազդեցություն չեն ունենում տարրի վրա:
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -193,32 +172,29 @@
                         <dl class="param">
                           <dt><a href="col\align.html">align</a></dt>
                           <dd>
-                            Устанавливает выравнивание содержимого колонки по
-                            краю. <span class="attr-Obsolete"></span>
+                            Սահմանում է բովանդակության հավասարեցում սյունակի  եզրերով: <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="col\char.html">char</a></dt>
                           <dd>
-                            Выравнивает содержимое колонки по заданному символу.
+                            Սյունակի բովանդակությունը հավասարեցնում է նշված նիշին:
                             <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="col\charoff.html">charoff</a></dt>
                           <dd>
-                            Сдвигает содержимое ячейки относительно заданного
-                            символа. <span class="attr-Obsolete"></span>
+                            Տեղափոխում է նշված պարունակությունը նիշի համեմատ:<span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="col\span.html">span</a></dt>
                           <dd>
-                            Количество колонок, к которым следует применять
-                            параметры.
+                            Սյունակների քանակը, որոնց վրա պետք է կիրառվեն պարամետրերը:
                           </dd>
                           <dt><a href="col\valign.html">valign</a></dt>
                           <dd>
-                            Задает вертикальное выравнивание содержимого
-                            колонки. <span class="attr-Obsolete"></span>
+                            Նշում է սյունակի բովանդակության ուղղահայաց հավասարումը: <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="col\width.html">width</a></dt>
                           <dd>
-                            Ширина колонок. <span class="attr-Obsolete"></span>
+                            Սյունակի լայնությունը:
+                            <span class="attr-Obsolete"></span>
                           </dd>
                         </dl>
                       </div>
@@ -253,7 +229,7 @@
                           &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;/body&gt;
                           &lt;/html&gt;</w-example
                         >
-                        <p>Результат данного примера показан на рис. 1.</p>
+                        <p>Այս օրինակի արդյունքը ներկայացված է Նկար 1-ում:</p>
                         <p class="fig">
                           <img
                             src="..\assets\images\html\tag_col_1.png"
@@ -262,7 +238,7 @@
                             height="307"
                           />
                         </p>
-                        <p class="figsign">Рис. 1. Вид колонок в браузере</p>
+                        <p class="figsign">Նկար: 1. Սյունակների տեսքը բրաուզերում:</p>
                       </div>
                     </div>
                   </div>

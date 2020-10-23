@@ -124,14 +124,10 @@
                 <div class="block_content">
                  
                   <p>
-                    Создаёт команду в виде переключателя, флажка или обычной
-                    кнопки. Элемент <span class="tag">&lt;command&gt;</span> (от
-                    англ. <i>command</i>&nbsp;— команда) должен располагаться
-                    внутри <a href="menu.html">&lt;menu&gt;</a>, в противном
-                    случае он не будет показан.
+                    Ստեղծում է հրաման անջատիչի, վանդակի կամ սովորական կոճակի տեսքով: <span class="tag">&lt;Command&gt;</span>տարրը  պետք է տեղադրված լինի <a href="menu.html">&lt;menu&gt;</a>-ի ներսում, հակառակ դեպքում այն ​​չի ցուցադրվի:
                   </p>
                   <p class="note">
-                    Это нестандартный элемент и браузерами не поддерживается.
+                    Սա ոչ ստանդարտ տարր է և չի աջակցվում բրաուզերի կողմից:
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -142,7 +138,7 @@
                     <div class="field-items">
                       <div class="field-item even">
                         <pre><code data-language="html">&lt;menu&gt;
- &lt;command параметры&gt;
+ &lt;command պարամետրերը&gt;
 &lt;/menu&gt;</code></pre>
                       </div>
                     </div>
@@ -166,32 +162,30 @@
                         <dl class="param">
                           <dt>checked</dt>
                           <dd>
-                            Активирует команду. Доступно только если
-                            <span class="attribute">type</span> установлен как
-                            <span class="value">radio</span> или
+                            Ակտիվացնում է հրամանը: Հասանելի է միայն այն դեպքում, երբ 
+                            <span class="attribute">type</span>-ը տեղադրված է որպես
+                            <span class="value">radio</span>  կամ
                             <span class="value">checkbox</span>.
                           </dd>
                           <dt>disabled</dt>
-                          <dd>Задаёт, доступна команда или нет.</dd>
+                          <dd>Նշում է ՝ հրամանը մատչելի է, թե ոչ:</dd>
                           <dt>icon</dt>
                           <dd>
-                            Адрес картинки, которая показывается перед командой.
+                            Նկարի հասցեն, որը ցուցադրվում է հրամանի դիմաց:
                           </dd>
                           <dt>label</dt>
-                          <dd>Название команды.</dd>
+                          <dd>Հրամանի անվանումը։</dd>
                           <dt>radiogroup</dt>
                           <dd>
-                            Задаёт имя группы переключателей. Доступно только
-                            если <span class="attribute">type</span> установлен
-                            как <span class="value">radio</span>.
+                            Անվանում է անջատիչների խմբի անունը: Հասանելի է միայն այն դեպքում, երբ <span class="attribute">type</span>-ը տեղադրված է որպես <span class="value">radio</span> :
                           </dd>
                           <dt>type</dt>
                           <dd>
-                            Определяет тип команды (<span class="value"
+                            Որոշում է հրամանի տեսակը (<span class="value"
                               >checkbox</span
                             >, <span class="value">command</span>,
-                            <span class="value">radio</span>). По умолчанию
-                            <span class="value">command</span>.
+                            <span class="value">radio</span>)։ Ըստ ստանդարտի
+                            <span class="value">command</span> :
                           </dd>
                         </dl>
                       </div>
@@ -224,7 +218,7 @@
                     class="field field-name-field-html-browser field-type-text-long field-label-above"
                   >
                     <h2 class="block_title" id="field_html_browser">
-                      Браузеры
+                      Բրաուզեր
                       <button @click="isHintBrowser=true" class="hint-ref">
                         <i class="icon-help"></i>
                       </button>

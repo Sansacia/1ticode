@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="..\assets\css\helli123.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="search"
@@ -18,39 +19,49 @@
       href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
       media="screen"
     />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="columns is-vcentered is-multiline">
-          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
-            <a href="..\index.htm"
-              ><span class="t1">Arm</span><span class="t2">Code</span></a
-            >
-          </div>
-          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+      </head>
+      <body>
+        <header>
+          <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">ArmCode</a>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <nav id="navMenu" class="navbar">
-        <div class="container">
-          <ul class="menu">
-            <li><a href="..\index.htm">Գլխավոր</a></li>
-            <li class="dropdown">
-              <span>Տեղեկատուներ</span>
-              <ul>
-                <li><a href="..\html.html">HTML</a></li>
-                <li><a href="..\css.html">CSS</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              
-        </div>
-      </nav>
-    </header>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Css</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        </header>
+<script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+          $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+  
+  });
+  </script>
+
+ 
     <main id="webref">
       <div class="container breadcrumb">
         <section class="region region-crumbs">
@@ -121,22 +132,15 @@
                 <div class="block_content">
                  
                   <p>
-                    Элемент <span class="tag">&lt;header&gt;</span> (от англ.
-                    <i>header</i>&nbsp;— верхний колонтитул, шапка) задаёт
-                    «шапку» сайта или раздела веб-страницы. Внутри «шапки» сайта
-                    обычно располагается логотип, название сайта, поисковая
-                    форма, навигационные ссылки и др.
+                    <span class="tag">&lt;header&gt;</span> տարրը սահմանում է կայքի կամ վեբ էջի բաժնի վերնագիրը: Կայքի «վերնագրի» ներսում սովորաբար կա պատկերանշան, կայքի անվանումը, որոնման ձևը, նավիգացիոն հղումները և այլն:
                   </p>
                   <p>
-                    <span class="tag">&lt;header&gt;</span> нельзя вкладывать
-                    внутрь другого <span class="tag">&lt;header&gt;</span>, а
-                    также внутрь элементов
-                    <a href="address.html">&lt;address&gt;</a> и
-                    <a href="footer.html">&lt;footer&gt;</a>.
+                    <span class="tag">&lt;header&gt;</span>-ը չի կարող տեղադրվել մեկ այլ <span class="tag">&lt;header&gt;</span>-ի մեջ, ինչպես նաև
+                    <a href="address.html">&lt;address&gt;</a> և
+                    <a href="footer.html">&lt;footer&gt;</a>տարրերի մեջ:
                   </p>
                   <p>
-                    Внутри <span class="tag">&lt;header&gt;</span> не должно
-                    быть элемента <a href="main.html">&lt;main&gt;</a>.
+                   <span class="tag">&lt;header&gt;</span> ներսում չպետք է լինի <a href="main.html">&lt;main&gt;</a> տարրը:
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -193,7 +197,8 @@
                           Copyright Кристина Ветрова &lt;/footer&gt;
                           &lt;/body&gt; &lt;/html&gt;</w-example
                         >
-                        <p>Результат данного примера показан на рис. 1.</p>
+                        <p>Այս օրինակի արդյունքը ներկայացված է Նկար 1-ում:
+                        </p>
                         <p class="fig">
                           <img
                             src="..\assets\images\html\tag_header.png"
@@ -202,7 +207,7 @@
                             height="376"
                           />
                         </p>
-                        <p class="figsign">Рис. 1. Заголовок сайта</p>
+                        <p class="figsign">Նկար: 1. Կայքի անվանումը</p>
                       </div>
                     </div>
                   </div>

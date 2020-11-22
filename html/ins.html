@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="..\assets\css\helli123.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="search"
@@ -21,39 +22,49 @@
       href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
       media="screen"
     />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="columns is-vcentered is-multiline">
-          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
-            <a href="..\index.htm"
-              ><span class="t1">Arm</span><span class="t2">Code</span></a
-            >
-          </div>
-          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+      </head>
+      <body>
+        <header>
+          <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">ArmCode</a>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <nav id="navMenu" class="navbar">
-        <div class="container">
-          <ul class="menu">
-            <li><a href="..\index.htm">Գլխավոր</a></li>
-            <li class="dropdown">
-              <span>Տեղեկատուներ</span>
-              <ul>
-                <li><a href="..\html.html">HTML</a></li>
-                <li><a href="..\css.html">CSS</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              
-        </div>
-      </nav>
-    </header>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Css</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        </header>
+<script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+          $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+  
+  });
+  </script>
+
+
     <main id="webref">
       <div class="container breadcrumb">
         <section class="region region-crumbs">
@@ -124,15 +135,11 @@
                 <div class="block_content">
                  
                   <p>
-                    Элемент <span class="tag">&lt;ins&gt;</span> (от англ.
-                    <i>insert</i>&nbsp;— вставить) предназначен для выделения
-                    текста, который был добавлен в новую версию документа.
-                    Подобное форматирование позволяет отследить, какие изменения
-                    в тексте документа были сделаны.
+                    <span class="tag">&lt;ins&gt;</span>  տարրը նախատեսված է փաստաթղթի նոր տարբերակին ավելացված տեքստը լուսաբանելու համար: Այս ձևաչափումը թույլ է տալիս հետևել, թե ինչ փոփոխություններ են կատարվել փաստաթղթի տեքստում:
                   </p>
                   <p>
-                    Браузеры обычно помечают текст в контейнере
-                    <span class="tag">&lt;ins&gt;</span> как подчёркнутый.
+                    Բրաուզերները սովորաբար
+                    <span class="tag">&lt;ins&gt;</span> տարայի մեջ տեքստը նշում են այնպես, ինչպես ընդգծված է:
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -165,16 +172,16 @@
                         <dl class="param">
                           <dt><a href="ins\cite.html">cite</a></dt>
                           <dd>
-                            Указывает ссылку на документ, где приведена причина
-                            редактирования текста и другие подробности.
+                            Նշում է հղում դեպի փաստաթուղթ, որը տրամադրում է տեքստի և այլ մանրամասների խմբագրման պատճառը:
+
                           </dd>
                           <dt><a href="ins\datetime.html">datetime</a></dt>
-                          <dd>Дата и время редактирования текста.</dd>
+                          <dd>Այս օրինակի արդյունքը ներկայացված է ստորև:</dd>
                         </dl>
                         <p class="more">
-                          Для этого элемента также доступны
-                          <a href="attr\common.html">универсальные атрибуты</a>
-                          и <a href="attr\event.html">события</a>.
+                          Նաև այս տարրի համար հասանելի են հատուկ 
+                          <a href="attr\common.html"> հատկանիշներ</a>
+                          և <a href="attr\event.html">իրադարձություններ</a>:
                         </p>
                       </div>
                     </div>
@@ -197,7 +204,7 @@
                           изменен&lt;/ins&gt;.&lt;/p&gt; &lt;/body&gt;
                           &lt;/html&gt;</w-example
                         >
-                        <p>Результат данного примера показан ниже.</p>
+                        <p>Այս օրինակի արդյունքը ներկայացված է ստորև:</p>
                         <p class="fig">
                           <img
                             src="..\assets\images\html\tag_ins.png"
@@ -207,7 +214,7 @@
                           />
                         </p>
                         <p class="figsign">
-                          Рис. 1. Вид текста, оформленного с помощью &lt;ins&gt;
+                          Նկար: 1. Տեքստի տեսակը, որը զարդարված է &lt;ins&gt;-ով
                         </p>
                       </div>
                     </div>

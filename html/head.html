@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="..\assets\css\helli123.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="search"
@@ -21,39 +22,49 @@
       href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
       media="screen"
     />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="columns is-vcentered is-multiline">
-          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
-            <a href="..\index.htm"
-              ><span class="t1">Arm</span><span class="t2">Code</span></a
-            >
-          </div>
-          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+      </head>
+      <body>
+        <header>
+          <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">ArmCode</a>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <nav id="navMenu" class="navbar">
-        <div class="container">
-          <ul class="menu">
-            <li><a href="..\index.htm">Գլխավոր</a></li>
-            <li class="dropdown">
-              <span>Տեղեկատուներ</span>
-              <ul>
-                <li><a href="..\html.html">HTML</a></li>
-                <li><a href="..\css.html">CSS</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-            
-        </div>
-      </nav>
-    </header>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Css</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        </header>
+<script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+          $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+  
+  });
+  </script>
+
+ 
     <main id="webref">
       <div class="container breadcrumb">
         <section class="region region-crumbs">
@@ -124,26 +135,16 @@
                 <div class="block_content">
                   
                   <p>
-                    Элемент <span class="tag">&lt;head&gt;</span> (от англ.
-                    <i>head</i>&nbsp;— голова) предназначен для хранения других
-                    элементов, цель которых&nbsp;&#8212; помочь браузеру в
-                    работе с данными. Также внутри контейнера
-                    <span class="tag">&lt;head&gt;</span> находятся метатеги,
-                    которые используются для хранения информации предназначенной
-                    для браузеров и поисковых систем. Например, механизмы
-                    поисковых систем обращаются к метатегам для получения
-                    описания сайта, ключевых слов и других данных.
+                    <span class="tag">&lt;Head&gt;</span> էլեմենտը նախատեսված է այլ տարրեր պահելու համար, որոնք նպատակ ունեն օգնելու բրաուզերին աշխատել տվյալների հետ:
+                    <span class="tag">&lt;Head&gt;</span> տարայի ներսում կան նաև մետապիտակները, որոնք օգտագործվում են բրաուզերների և որոնիչների համար նախատեսված տեղեկությունները պահելու համար: Օրինակ ՝ որոնիչները որոնում են մետապիտակները ՝ կայքի նկարագրություններ, հիմնաբառեր և այլ տվյալներ ստանալու համար:
                   </p>
                   <p>
-                    Содержимое <span class="tag">&lt;head&gt;</span> не
-                    отображается напрямую на веб-странице, за исключением
-                    элемента <a href="title.html">&lt;title&gt;</a>, он задаёт
-                    заголовок окна веб-страницы.
+                    <span class="tag">&lt;Head&gt;</span> не
+                    բովանդակությունը ուղղակիորեն չի ցուցադրվում ինտերնետային էջում, բացառությամբ  <a href="title.html">&lt;title&gt;</a> էլեմենտի, այն սահմանում է վեբ էջի պատուհանի վերնագիրը:
                   </p>
                   <p>
-                    Внутри контейнера
-                    <span class="tag">&lt;head&gt;</span> допускается размещать
-                    следующие элементы: <a href="base.html">&lt;base&gt;</a>,
+                    Հետևյալ տարրերը կարող են տեղադրվել
+                    <span class="tag">&lt;head&gt;</span> տարայի ներսում՝ <a href="base.html">&lt;base&gt;</a>,
                     <a href="basefont.html">&lt;basefont&gt;</a>,
                     <a href="bgsound.html">&lt;bgsound&gt;</a>,
                     <a href="link.html">&lt;link&gt;</a>,
@@ -185,7 +186,7 @@
                         <dl class="param">
                           <dt><a href="head\profile.html">profile</a></dt>
                           <dd>
-                            Указывает адрес профиля метаданных.
+                            Նշում է մետատվյալների պրոֆիլի հասցեն:
                             <span class="attr-HTML4"></span>
                             <span class="attr-HTML5-Obsolete"></span>
                           </dd>
@@ -200,12 +201,14 @@
                     <div class="field-items">
                       <div class="field-item even">
                         <w-example is-result="false"
-                          >&lt;!DOCTYPE HTML&gt; &lt;html&gt; &lt;head&gt;
-                          &lt;!-- Этот раздел предназначен для заголовка
-                          страницы и технической информации. --&gt;
-                          &lt;/head&gt; &lt;body&gt; &lt;!-- А здесь надо
-                          размещать всё, что хочется увидеть на странице. --&gt;
-                          &lt;/body&gt; &lt;/html&gt;</w-example
+                          >&lt;!DOCTYPE HTML&gt; &lt;html&gt; 
+&lt;head&gt; 
+&lt;!-- Այս բաժինը նախատեսված է էջի վերնագրի և տեխնիկական տեղեկատվության համար: --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- Եվ այստեղ անհրաժեշտ է էջում տեղադրել այն ամենը, ինչ ցանկանում եք տեսնել: --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</w-example
                         >
                       </div>
                     </div>

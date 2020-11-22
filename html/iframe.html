@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="..\assets\css\helli123.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="search"
@@ -18,39 +19,49 @@
       href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
       media="screen"
     />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="columns is-vcentered is-multiline">
-          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
-            <a href="..\index.htm"
-              ><span class="t1">Arm</span><span class="t2">Code</span></a
-            >
-          </div>
-       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+      </head>
+      <body>
+        <header>
+          <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">ArmCode</a>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <nav id="navMenu" class="navbar">
-        <div class="container">
-          <ul class="menu">
-            <li><a href="..\index.htm">Գլխավոր</a></li>
-            <li class="dropdown">
-              <span>Տեղեկատուներ</span>
-              <ul>
-                <li><a href="..\html.html">HTML</a></li>
-                <li><a href="..\css.html">CSS</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-             
-        </div>
-      </nav>
-    </header>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Css</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        </header>
+<script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+          $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+  
+  });
+  </script>
+
+
     <main id="webref">
       <div class="container breadcrumb">
         <section class="region region-crumbs">
@@ -121,20 +132,12 @@
                 <div class="block_content">
                  
                   <p>
-                    Элемент <span class="tag">&lt;iframe&gt;</span> (от англ.
-                    <i>inline frame</i>&nbsp;— встроенный фрейм) создаёт
-                    встроенный фрейм, который находится внутри обычного
-                    документа, он позволяет загружать в область заданных
-                    размеров любые другие независимые документы.
+                    <span class="tag">&lt;iframe&gt;</span>տարրը ստեղծում է ներդիրային շրջանակը(iframe), որը գտնվում է սովորական փաստաթղթի ներսում, այն թույլ է տալիս ցանկացած այլ անկախ փաստաթուղթ բեռնել նշված չափսերի տարածքում:
                   </p>
                   <p>
-                    <span class="tag">&lt;iframe&gt;</span> является
-                    контейнером, содержание которого игнорируется браузерами, не
-                    поддерживающими данный элемент. Для таких браузеров можно
-                    указать альтернативный текст, который увидят пользователи.
-                    Он должен располагаться между тегами
-                    <span class="tag">&lt;iframe&gt;</span> и
-                    <span class="tag">&lt;/iframe&gt;</span>.
+                    <span class="tag">&lt;iframe&gt;</span> կոնտեյներ է, որի բովանդակությունը անտեսվում է այն բրաուզերների կողմից, որոնք չեն աջակցում այս տարրը: Նման բրաուզերների համար կարող եք նշել այլընտրանքային տեքստ, որը օգտվողները կտեսնեն: Այն պետք է տեղակայված լինի 
+                    <span class="tag">&lt;iframe&gt;</span> և 
+                    <span class="tag">&lt;/iframe&gt;</span> պիտակների միջև:
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -167,8 +170,8 @@
                         <dl class="param">
                           <dt><a href="iframe\align.html">align</a></dt>
                           <dd>
-                            Определяет, как фрейм будет выравниваться по краю, а
-                            также способ обтекания его текстом.
+                            Որոշում է, թե ինչպես է շրջանակը հավասարեցվելու եզրին, ինչպես նաև, թե ինչպես է տեքստը հոսում դրա շուրջ:
+
                             <span class="attr-Obsolete"></span>
                           </dd>
                           <dt>
@@ -177,7 +180,7 @@
                             >
                           </dt>
                           <br />
-                          <dd>Разрешает для фрейма полноэкранный режим.</dd>
+                          <dd>Շրջանակի համար թույլ է տալիս լրիվ էկրանի ռեժիմը:</dd>
                           <dt>
                             <a href="iframe\allowtransparency.html"
                               >allowtransparency</a
@@ -185,73 +188,67 @@
                           </dt>
                           <br />
                           <dd>
-                            Устанавливает прозрачный фон фрейма, через который
-                            виден фон страницы.
+                            Սահմանում է շրջանակի թափանցիկ ֆոնը, որի միջոցով էջի ֆոնը տեսանելի է:
                             <span class="attr-NonStandard"></span>
                           </dd>
                           <dt>
                             <a href="iframe\frameborder.html">frameborder</a>
                           </dt>
                           <dd>
-                            Устанавливает, отображать границу вокруг фрейма или
-                            нет. <span class="attr-HTML4"></span>
+                            Սահմանում է ՝ շրջանակի շուրջը ցույց տալ, թե ոչ:
+                            <span class="attr-HTML4"></span>
                           </dd>
                           <dt><a href="iframe\height.html">height</a></dt>
-                          <dd>Высота фрейма.</dd>
+                          <dd>Շրջանակի բարձրությունը:</dd>
                           <dt><a href="iframe\hspace.html">hspace</a></dt>
                           <dd>
-                            Горизонтальный отступ от фрейма до окружающего
-                            контента. <span class="attr-Obsolete"></span>
+                            Շրջանակից հորիզոնական լցոնումը շրջապատող բովանդակությանը: <span class="attr-Obsolete"></span>
                           </dd>
                           <dt>
                             <a href="iframe\marginheight.html">marginheight</a>
                           </dt>
                           <dd>
-                            Отступ сверху и снизу от содержания до границы
-                            фрейма. <span class="attr-HTML4"></span>
+                            Վերևի և ներքևի խորացում բովանդակությունից դեպի շրջանակի սահման:<span class="attr-HTML4"></span>
                           </dd>
                           <dt>
                             <a href="iframe\marginwidth.html">marginwidth</a>
                           </dt>
                           <dd>
-                            Отступ слева и справа от содержимого до границы
-                            фрейма. <span class="attr-HTML4"></span>
+                            Բովանդակության ձախ և աջ լրացում շրջանակի սահմանին: <span class="attr-HTML4"></span>
                           </dd>
                           <dt><a href="iframe\name.html">name</a></dt>
-                          <dd>Имя фрейма.</dd>
+                          <dd>Շրջանակի անվանումը.
+                          </dd>
                           <dt><a href="iframe\sandbox.html">sandbox</a></dt>
                           <dd>
-                            Позволяет задать ряд ограничений на контент
-                            загружаемый во фрейме.
+                            Թույլ է տալիս սահմանել մի շարք սահմանափակումներ շրջանակում բեռնված բովանդակության վերաբերյալ:
+
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="iframe\scrolling.html">scrolling</a></dt>
                           <dd>
-                            Способ отображения полосы прокрутки во фрейме.
+                            Ինչպես ոլորման գոտին ցուցադրվում է շրջանակներում:
                           </dd>
                           <dt><a href="iframe\seamless.html">seamless</a></dt>
                           <dd>
-                            Определяет, что содержимое фрейма должно
-                            отображаться так, словно оно является частью
-                            документа. <span class="attr-HTML5"></span>
+                            Նշում է, որ շրջանակի բովանդակությունը պետք է ցուցադրվի այնպես, կարծես այն փաստաթղթի մաս է: <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="iframe\src.html">src</a></dt>
                           <dd>
-                            Путь к файлу, содержимое которого будет загружаться
-                            во фрейм.
+                            Ճանապարհ դեպի ֆայլ, որի բովանդակությունը կբեռնվի շրջանակի մեջ:
                           </dd>
                           <dt><a href="iframe\srcdoc.html">srcdoc</a></dt>
                           <dd>
-                            Хранит содержимое фрейма непосредственно в атрибуте.
+                            Պահում է շրջանակի բովանդակությունը անմիջապես ատրիբուտում:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="iframe\vspace.html">vspace</a></dt>
                           <dd>
-                            Вертикальный отступ от фрейма до окружающего
-                            контента. <span class="attr-Obsolete"></span>
+                            Ուղղահայաց լցոնումը շրջանակից դեպի շրջակա բովանդակություն:
+                            <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="iframe\width.html">width</a></dt>
-                          <dd>Ширина фрейма.</dd>
+                          <dd>Շրջանակի լայնությունը:</dd>
                         </dl>
                       </div>
                     </div>

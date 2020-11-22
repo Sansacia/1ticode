@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="..\assets\css\helli123.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="search"
@@ -21,39 +22,49 @@
       href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
       media="screen"
     />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="columns is-vcentered is-multiline">
-          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
-            <a href="..\index.htm"
-              ><span class="t1">Arm</span><span class="t2">Code</span></a
-            >
-          </div>
-          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+      </head>
+      <body>
+        <header>
+          <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">ArmCode</a>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <nav id="navMenu" class="navbar">
-        <div class="container">
-          <ul class="menu">
-            <li><a href="..\index.htm">Գլխավոր</a></li>
-            <li class="dropdown">
-              <span>Տեղեկատուներ</span>
-              <ul>
-                <li><a href="..\html.html">HTML</a></li>
-                <li><a href="..\css.html">CSS</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              
-        </div>
-      </nav>
-    </header>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Css</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        </header>
+<script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+          $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+  
+  });
+  </script>
+
+
     <main id="webref">
       <div class="container breadcrumb">
         <section class="region region-crumbs">
@@ -124,22 +135,14 @@
                 <div class="block_content">
                  
                   <p>
-                    Элемент <span class="tag">&lt;img&gt;</span> (от англ.
-                    <i>image</i> — изображение) предназначен для отображения на
-                    веб-странице изображений в графическом формате GIF, JPEG,
-                    SVG или PNG. Адрес файла с картинкой задаётся через атрибут
-                    <a href="img\src.html">src</a>. Если необходимо, то рисунок
-                    можно сделать ссылкой на другой файл, поместив
-                    <span class="tag">&lt;img&gt;</span> в контейнер
-                    <a href="a.html">&lt;a&gt;</a>.
+                    <span class="tag">&lt;img&gt;</span> էլեմենտը նախատեսված է GIF, JPEG, SVG կամ PNG գրաֆիկական ձևաչափով պատկերները ինտերնետային էջում ցուցադրելու համար: Պատկերի ֆայլի հասցեն նշվում է 
+                    <a href="img\src.html">src</a> հատկանիշի միջոցով: Անհրաժեշտության դեպքում նկարը կարող է հղում լինել դեպի մեկ այլ ֆայլ ՝ տեղադրելով 
+                    <span class="tag">&lt;img&gt;</span> 
+                    <a href="a.html">&lt;a&gt;</a> տարրի մեջ:
+
                   </p>
                   <p>
-                    Рисунки также могут применяться в качестве карт-изображений,
-                    когда картинка содержит активные области, выступающие в
-                    качестве ссылок. Такая карта по внешнему виду ничем не
-                    отличается от обычного изображения, но при этом оно может
-                    быть разбито на невидимые зоны разной формы, где каждая из
-                    областей служит ссылкой.
+                    Նկարները կարող են օգտագործվել նաև որպես պատկերային քարտեզներ, երբ նկարը պարունակում է թեժ կետեր, որոնք գործում են որպես հղումներ: Արտաքնապես նման քարտեզը չի տարբերվում սովորական պատկերից, բայց միևնույն ժամանակ այն կարելի է բաժանել տարբեր ձևերի՝ անտեսանելի գոտիների, որտեղ յուրաքանչյուր տարածք ծառայում է որպես օղակ:
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -172,72 +175,67 @@
                         <dl class="param">
                           <dt><a href="img\align.html">align</a></dt>
                           <dd>
-                            Определяет, как рисунок будет выравниваться по краю
-                            и способ обтекания текстом.
+                            Որոշում է, թե ինչպես է պատկերը հավասարեցված լինելու եզրին և ինչպես է տեքստը հոսում շուրջը:
                             <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="img\alt.html">alt</a></dt>
                           <dd>
-                            Альтернативный текст для изображения.
+                            Պատկերի այլընտրանքային տեքստ:
                             <span class="attr-Required"></span>
                           </dd>
                           <dt><a href="img\border.html">border</a></dt>
                           <dd>
-                            Толщина рамки вокруг изображения.
+                            Սահմանի հաստությունը պատկերի շուրջ:
+
                             <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="img\height.html">height</a></dt>
-                          <dd>Высота изображения.</dd>
+                          <dd>Պատկերի բարձրությունը:
+                          </dd>
                           <dt><a href="img\hspace.html">hspace</a></dt>
                           <dd>
-                            Горизонтальный отступ от изображения до окружающего
-                            контента. <span class="attr-Obsolete"></span>
+                            Հորիզոնական լցոնումը պատկերից դեպի շրջակա բովանդակություն: <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="img\ismap.html">ismap</a></dt>
                           <dd>
-                            Говорит браузеру, что картинка является серверной
-                            картой-изображением.
+                            Բրաուզերին ասում է - որ նկարը սերվերի կողմից պատկերված քարտեզ է:
                           </dd>
                           <dt><a href="img\longdesc.html">longdesc</a></dt>
                           <dd>
-                            Указывает адрес документа, где содержится аннотация
-                            к картинке.
+                            Նշում է նկարի անոտացիան պարունակող փաստաթղթի հասցեն:
+
                             <span class="attr-HTML5-Obsolete"></span>
                           </dd>
                           <dt><a href="img\sizes.html">sizes</a></dt>
                           <dd>
-                            Задаёт размеры изображения для разных макетов
-                            страницы. <span class="attr-HTML5"></span>
+                            Սահմանում է պատկերի չափերը էջի տարբեր դասավորությունների դեպքում: <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="img\src.html">src</a></dt>
                           <dd>
-                            Путь к графическому файлу.
+                            Ճանապարհը դեպի գրաֆիկական ֆայլ:
                             <span class="attr-Required"></span>
                           </dd>
                           <dt><a href="img\srcset.html">srcset</a></dt>
                           <dd>
-                            Путь к графическим файлам с учётом размера
-                            изображения и устройств.
+                            Ճանապարհ դեպի գրաֆիկական ֆայլեր ՝ հաշվի առնելով պատկերի չափը և սարքերը:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="img\vspace.html">vspace</a></dt>
                           <dd>
-                            Вертикальный отступ от изображения до окружающего
-                            контента. <span class="attr-Obsolete"></span>
+                            Ուղղահայաց լցոնումը պատկերից դեպի շրջակա բովանդակություն: <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="img\width.html">width</a></dt>
-                          <dd>Ширина изображения.</dd>
+                          <dd>Պատկերի լայնությունը:
+                          </dd>
                           <dt><a href="img\usemap.html">usemap</a></dt>
                           <dd>
-                            Ссылка на элемент
-                            <span class="tag">&lt;map&gt;</span>, содержащий
-                            координаты для клиентской карты-изображения.
+                            Հղում հաճախորդի պատկերային քարտեզի համար կոորդինատներ պարունակող <span class="tag">&lt;map&gt;</span> տարրին:
                           </dd>
                         </dl>
                         <p class="more">
-                          Также для этого элемента доступны
-                          <a href="attr\common.html">универсальные атрибуты</a>
-                          и <a href="attr\event.html">события</a>.
+                          Նաև այս տարրի համար հասանելի են հատուկ 
+                          <a href="attr\common.html"> հատկանիշներ</a>
+                          և <a href="attr\event.html">իրադարձություններ</a>:
                         </p>
                       </div>
                     </div>

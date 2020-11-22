@@ -201,6 +201,7 @@ hgroup,
 hr,
 section {
   display: block;
+  
 }
 .button:active,
 .button:focus,
@@ -4467,7 +4468,7 @@ body,
 header .input-group {
   margin: 0;
 }
-.navbar li,
+ bar li,
 img {
   display: inline-block;
 }
@@ -4477,14 +4478,14 @@ img {
 .hosting {
   text-align: center;
 }
-.navbar,
+ bar,
 header {
   z-index: 100;
   position: relative;
 }
 .attribute,
 .easy-breadcrumb .easy-breadcrumb_segment,
-.navbar .dropdown ul li,
+ bar .dropdown ul li,
 .toc li {
   white-space: nowrap;
 }
@@ -4534,11 +4535,7 @@ img {
 }
 header {
   background: #1d262d;
-}
-.logo {
-  font-size: 1.7rem;
-  line-height: 1;
-}
+} 
 header .t1 {
   color: #fff;
 }
@@ -4560,51 +4557,51 @@ header .button {
 #cse-search-input {
   margin: 0;
 }
-.navbar {
+ bar {
   background: linear-gradient(to bottom, #272a2c, #272a2c);
   border-top: 1px solid rgb(29, 176, 202);
   border-bottom: 1px solid #d8781f;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
-.navbar .menu {
+ bar .menu {
   list-style-type: none;
   margin: 0;
 }
 
-.navbar .menu > li:first-child a {
+ bar .menu > li:first-child a {
   padding-left: 0;
 }
-.navbar a,
-.navbar span {
+ bar a,
+ bar span {
   color: #ffffff;
   padding: 5px 0.75rem;
   font-weight: 700;
   text-shadow: 1px 1px rgb(0, 204, 255);
 }
 
-.navbar a:hover,
-.navbar span:hover {
+ bar a:hover,
+ bar span:hover {
   color: #ffffff;
 }
-.navbar a.active,
-.navbar span.active {
+ bar a.active,
+ bar span.active {
   background: linear-gradient(to bottom, #2b3c4c, #19232c);
   color: #fff;
   border-top: 1px solid #3b4c5c;
   margin-top: -1px;
   text-shadow: 1px 0 #00396f;
 }
-.navbar .dropdown {
+ bar .dropdown {
   position: relative;
 }
-.navbar .dropdown span {
+ bar .dropdown span {
   cursor: pointer;
 }
-.navbar .dropdown span::after {
+ bar .dropdown span::after {
   content: "▼";
   padding-left: 5px;
 }
-.navbar .dropdown ul {
+ bar .dropdown ul {
   position: absolute;
   left: 0.75rem;
   margin: 0;
@@ -4615,20 +4612,20 @@ header .button {
   z-index: 3;
 }
 
-.navbar .dropdown ul li {
+ bar .dropdown ul li {
   display: block;
 }
-.navbar .dropdown ul li a {
+ bar .dropdown ul li a {
   display: block;
   width: 100%;
 }
-.navbar .dropdown:hover ul {
+ bar .dropdown:hover ul {
   display: block;
 }
-.page-frontpage .navbar li.first a {
+.page-frontpage  bar li.first a {
   padding-left: 0.75rem;
 }
-.navbar-burger {
+ bar-burger {
   background: #6a7074;
   cursor: pointer;
   display: block;
@@ -4637,7 +4634,7 @@ header .button {
   width: 3.25rem;
   margin-left: auto;
 }
-.navbar-burger span {
+ bar-burger span {
   background-color: currentColor;
   display: block;
   height: 1px;
@@ -4653,25 +4650,25 @@ header .button {
 .easy-breadcrumb span {
   display: inline-flex;
 }
-.navbar-burger span:nth-child(1) {
+ bar-burger span:nth-child(1) {
   top: calc(50% - 6px);
 }
-.navbar-burger span:nth-child(2) {
+ bar-burger span:nth-child(2) {
   top: calc(50% - 1px);
 }
-.navbar-burger span:nth-child(3) {
+ bar-burger span:nth-child(3) {
   top: calc(50% + 4px);
 }
-.navbar-burger.is-active {
+ bar-burger.is-active {
   background: #a91616;
 }
-.navbar-burger.is-active span:nth-child(1) {
+ bar-burger.is-active span:nth-child(1) {
   transform: translateY(5px) rotate(45deg);
 }
-.navbar-burger.is-active span:nth-child(2) {
+ bar-burger.is-active span:nth-child(2) {
   opacity: 0;
 }
-.navbar-burger.is-active span:nth-child(3) {
+ bar-burger.is-active span:nth-child(3) {
   transform: translateY(-5px) rotate(-45deg);
 }
 footer {
@@ -5540,7 +5537,7 @@ table tbody tr:nth-child(even) {
 #book-navigation a.active {
   color: #293848;
 }
-.navigation-tooltip {
+ igation-tooltip {
   display: inline-block;
   margin: 10px 26px 0;
 }

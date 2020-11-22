@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="..\assets\css\helli123.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="search"
@@ -21,39 +22,49 @@
       href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
       media="screen"
     />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="columns is-vcentered is-multiline">
-          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
-            <a href="..\index.htm"
-              ><span class="t1">Arm</span><span class="t2">Code</span></a
-            >
-          </div>
-         
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+      </head>
+      <body>
+        <header>
+          <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">ArmCode</a>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <nav id="navMenu" class="navbar">
-        <div class="container">
-          <ul class="menu">
-            <li><a href="..\index.htm">Գլխավոր</a></li>
-            <li class="dropdown">
-              <span>Տեղեկատուներ</span>
-              <ul>
-                <li><a href="..\html.html">HTML</a></li>
-                <li><a href="..\css.html">CSS</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-             
-        </div>
-      </nav>
-    </header>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Css</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        </header>
+<script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+          $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+  
+  });
+  </script>
+
+
     <main id="webref">
       <div class="container breadcrumb">
         <section class="region region-crumbs">
@@ -124,20 +135,13 @@
                 <div class="block_content">
                   
                   <p>
-                    Элемент <span class="tag">&lt;html&gt;</span> является
-                    контейнером, который заключает в себе всё содержимое
-                    веб-страницы, включая элементы
-                    <a href="head.html">&lt;head&gt;</a> и
-                    <a href="body.html">&lt;body&gt;</a>. Открывающий и
-                    закрывающий теги <span class="tag">&lt;html&gt;</span> в
-                    документе не обязательны, но хороший стиль диктует
-                    непременное их использование. Как правило,
-                    <span class="tag">&lt;html&gt;</span> идёт в документе
-                    вторым, после определения типа документа (Document Type
-                    Definition, DTD), устанавливаемого через
-                    <a href="!doctype-1.html">&lt;!DOCTYPE&gt;</a>. Закрывающий
-                    тег <span class="tag">&lt;html&gt;</span> всегда стоит в
-                    документе последним.
+                    <span class="tag">&lt;html&gt;</span> տարրը կոնտեյներ է, որը պարունակում է վեբ էջի ամբողջ բովանդակությունը, ներառյալ
+                    <a href="head.html">&lt;head&gt;</a> և
+                    <a href="body.html">&lt;body&gt;</a> տարրերը: Բացող և փակող <span class="tag">&lt;html&gt;</span> в
+                    թեգերը ընտրովի են փաստաթղթում, բայց լավ ոճը թելադրում է դրանց օգտագործումը: Որպես կանոն,
+                    <span class="tag">&lt;html&gt;</span> փաստաթղթոը գալիս է երկրորդը, փաստաթղթի տեսակի սահմանումից հետո, որը դրվում է
+                    <a href="!doctype-1.html">&lt;!DOCTYPE&gt;</a>-ի միջոցով: Փակող
+                       <span class="tag">&lt;html&gt;</span> թեգը միշտ վերջինն է փաստաթղթում:
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -172,25 +176,17 @@
                         <dl class="param2">
                           <dt><a href="html\manifest.html">manifest</a></dt>
                           <dd>
-                            Указывает файл манифеста, необходимый для создания
-                            оффлайнового приложения.
-                            <span class="attr-Obsolete"></span>
-                          </dd>
-                          <dt>version</dt>
-                          <dd>
-                            Задаёт версию DTD. Данный атрибут не нужен и
-                            избыточен, версия определяется через
-                            <span class="tag">&lt;!DOCTYPE&gt;</span>.
+                            Նշում է մանիֆեստի ֆայլը, որն անհրաժեշտ է անցանց ծրագիր ստեղծելու համար:
                             <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="html\xmlns.html">xmlns</a></dt>
                           <dd>
-                            Указывает пространство имён для XHTML-документов.
+                            Նշում է XHTML փաստաթղթերի անվանման տարածքը:
                           </dd>
                         </dl>
                         <p class="more">
-                          Также для этого элемента доступны
-                          <a href="attr\common.html">универсальные атрибуты</a>.
+                          Նաև այս տարրի համար հասանելի են հատուկ 
+                          <a href="attr\common.html"> հատկանիշներ</a>:
                         </p>
                       </div>
                     </div>

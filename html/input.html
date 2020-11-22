@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="..\assets\css\helli123.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="search"
@@ -21,39 +22,49 @@
       href="..\assets\css\css_L8Z8VQnaSprDMMVrsE8b79mCrJBHRV1ORnSznYo-r3M.css"
       media="screen"
     />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="columns is-vcentered is-multiline">
-          <div class="column logo is-12-mobile is-12-tablet is-6-desktop">
-            <a href="..\index.htm"
-              ><span class="t1">Arm</span><span class="t2">Code</span></a
-            >
-          </div>
-          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+      </head>
+      <body>
+        <header>
+          <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">ArmCode</a>
                 </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <nav id="navMenu" class="navbar">
-        <div class="container">
-          <ul class="menu">
-            <li><a href="..\index.htm">Գլխավոր</a></li>
-            <li class="dropdown">
-              <span>Տեղեկատուներ</span>
-              <ul>
-                <li><a href="..\html.html">HTML</a></li>
-                <li><a href="..\css.html">CSS</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-             
-        </div>
-      </nav>
-    </header>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Css</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+        </header>
+<script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+          $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+  
+  });
+  </script>
+
+
     <main id="webref">
       <div class="container breadcrumb">
         <section class="region region-crumbs">
@@ -124,35 +135,21 @@
                 <div class="block_content">
                   
                   <p>
-                    <span class="tag">&lt;input&gt;</span> (от англ.
-                    <i>input</i>&nbsp;— ввод) является одним из разносторонних
-                    элементов формы и позволяет создавать разные части
-                    интерфейса и обеспечивать взаимодействие с пользователем.
-                    Главным образом
-                    <span class="tag">&lt;input&gt;</span> предназначен для
-                    создания текстовых полей, различных кнопок, переключателей и
-                    флажков.
+                    <span class="tag">&lt;input&gt;</span> ձևի բազմակողմանի տարրերից մեկն է, որը թույլ է տալիս ստեղծել ինտերֆեյսի տարբեր մասեր և ապահովել օգտագործողի փոխազդեցություն: Հիմնականում
+                    <span class="tag">&lt;input&gt;</span> -ը տեքստային դաշտեր, տարբեր կոճակներ, ռադիո կոճակներ և վանդակներ ստեղծելու համար է:
                   </p>
                   <p>
-                    Основной атрибут <span class="tag">&lt;input&gt;</span>,
-                    определяющий вид элемента &#8212;
-                    <a href="input\type.html">type</a>. Он позволяет задавать
-                    следующие элементы формы: текстовое поле (<span
+                    Հիմնական  <span class="tag">&lt;input&gt;</span>,
+                    հատկությունը, սահմանում է տարրի տեսակը: Այն թույլ է տալիս սահմանել ձևի հետևյալ տարրերը. Տեքստի դաշտ (<span
                       class="value"
                       >text</span
-                    >), поле с паролем (<span class="value">password</span>),
-                    переключатель (<span class="value">radio</span>), флажок
-                    (<span class="value">checkbox</span>), скрытое поле (<span
+                    >), գաղտնաբառի դաշտ (<span class="value">password</span>),
+                    ռադիո կոճակ (<span class="value">radio</span>), վանդակ
+                    (<span class="value">checkbox</span>), թաքնված դաշտ (<span
                       class="value"
                       >hidden</span
-                    >), кнопка (<span class="value">button</span>), кнопка для
-                    отправки формы (<span class="value">submit</span>), кнопка
-                    для очистки формы (<span class="value">reset</span>), поле
-                    для отправки файла (<span class="value">file</span>), кнопка
-                    с изображением (<span class="value">image</span>) и др. Для
-                    каждого элемента существует свой список атрибутов, которые
-                    определяют его вид и характеристики. Кроме того, в HTML5
-                    добавлено ещё более десятка новых элементов.
+                    >), կոճակ (<span class="value">button</span>), կոճակ ձևը ներկայացնելու համար (<span class="value">submit</span>), կոճակ ձևը մաքրելու համար (<span class="value">reset</span>),
+                    ֆայլը ուղարկելու դաշտ (<span class="value">file</span>), պատկերով կոճակ (<span class="value">image</span>) և այլն: Յուրաքանչյուր տարր ունի իր հատկությունների ցուցակը, որոնք որոշում են դրա տեսքն ու հատկությունները: Բացի այդ, HTML5- ին ավելացվել են մեկ տասնյակից ավելի նոր տարրեր:
                   </p>
                   <div
                     class="field field-name-field-html-syntax field-type-text-long field-label-above"
@@ -185,72 +182,71 @@
                         <dl class="param">
                           <dt><a href="input\accept.html">accept</a></dt>
                           <dd>
-                            Устанавливает фильтр на типы файлов, которые вы
-                            можете отправить через поле загрузки файлов.
+                            Սահմանում է զտիչ այն ֆայլերի տեսակների համար, որոնք կարող եք ներկայացնել ֆայլերի վերբեռնման դաշտի միջոցով:
+
                           </dd>
                           <dt><a href="input\align.html">align</a></dt>
                           <dd>
-                            Определяет выравнивание изображения.
+                            Որոշում է պատկերի հավասարեցումը:
+
                             <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="input\alt.html">alt</a></dt>
                           <dd>
-                            Альтернативный текст для кнопки с изображением.
+                            Պատկերի կոճակի այլընտրանքային տեքստ:
                           </dd>
                           <dt>
                             <a href="input\autocomplete.html">autocomplete</a>
                           </dt>
                           <dd>
-                            Включает или отключает автозаполнение.
+                            Միացնում կամ անջատում է ինքնալրացումը:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\autofocus.html">autofocus</a></dt>
                           <dd>
-                            Устанавливает фокус в поле формы.
+                            Կոմպլեկտները դնում են ձևի դաշտի վրա:
+
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\border.html">border</a></dt>
                           <dd>
-                            Толщина рамки вокруг изображения.
+                            Սահմանի հաստությունը պատկերի շուրջ:
                             <span class="attr-Obsolete"></span>
                           </dd>
                           <dt><a href="input\checked.html">checked</a></dt>
                           <dd>
-                            Предварительно активированный переключатель или
-                            флажок.
+                            Նախապես ակտիվացված անջատիչ կամ վանդակում:
                           </dd>
                           <dt><a href="input\dirname.html">dirname</a></dt>
                           <dd>
-                            Параметр, который передаёт на сервер направление
-                            текста. <span class="attr-HTML5"></span>
+                            Պարամետր, որը տեքստի ուղղությունը փոխանցում է սերվերին: <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\disabled.html">disabled</a></dt>
-                          <dd>Блокирует доступ и изменение элемента.</dd>
+                          <dd>Արգելափակում է իրի մուտքն ու փոփոխումը:</dd>
                           <dt><a href="input\form.html">form</a></dt>
                           <dd>
-                            Связывает поле с формой по её идентификатору.
+                            Դաշտը կապում է ձևի հետ իր նույնացուցիչով:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt>
                             <a href="input\formaction.html">formaction</a>
                           </dt>
                           <dd>
-                            Определяет адрес обработчика формы.
+                            Նշում է ձևի մշակիչի հասցեն:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt>
                             <a href="input\formenctype.html">formenctype</a>
                           </dt>
                           <dd>
-                            Устанавливает способ кодирования данных формы при их
-                            отправке на сервер. <span class="attr-HTML5"></span>
+                            Սահմանում է, թե ինչպես է կոդավորվում ձևի տվյալները, երբ դրանք ուղարկվում են սերվեր: <span class="attr-HTML5"></span>
                           </dd>
                           <dt>
                             <a href="input\formmethod.html">formmethod</a>
                           </dt>
                           <dd>
-                            Сообщает браузеру каким методом следует передавать
-                            данные формы на сервер.
+                            Ասում է բրաուզերին, թե որ եղանակով է ձևի տվյալները սերվեր ուղարկել:
+
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt>
@@ -259,98 +255,96 @@
                             >
                           </dt>
                           <dd>
-                            Отменяет встроенную проверку данных на корректность.
+                            Չեղյալ է հայտարարում ներկառուցված տվյալների վավերացումը:
+
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt>
                             <a href="input\formtarget.html">formtarget</a>
                           </dt>
                           <dd>
-                            Определяет окно или фрейм в которое будет
-                            загружаться результат, возвращаемый обработчиком
-                            формы. <span class="attr-HTML5"></span>
+                            Նշում է պատուհանը կամ շրջանակը, որի մեջ բեռնվելու է ձևափոխիչի կողմից վերադարձված արդյունքը: <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\list.html">list</a></dt>
                           <dd>
-                            Указывает на список вариантов, которые можно
-                            выбирать при вводе текста.
+                            
+Նշում է ընտրանքների ցուցակ, որոնք կարող եք ընտրել տեքստ մուտքագրելիս:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\max.html">max</a></dt>
                           <dd>
-                            Верхнее значение для ввода числа или даты.
+                            Թիվ կամ ամսաթիվ մուտքագրելու վերին արժեքը:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\maxlength.html">maxlength</a></dt>
                           <dd>
-                            Максимальное количество символов разрешённых в
-                            тексте.
+                            Տեքստում թույլատրված նիշերի առավելագույն քանակը:
                           </dd>
                           <dt><a href="input\min.html">min</a></dt>
                           <dd>
-                            Нижнее значение для ввода числа или даты.
+                           
+Համարի կամ ամսաթվի մուտքագրման ավելի ցածր արժեք:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\minlength.html">minlength</a></dt>
                           <dd>
-                            Минимальное количество символов разрешённых в
-                            тексте. <span class="attr-HTML5"></span>
+                            Տեքստում թույլատրված նիշերի նվազագույն քանակը: <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\multiple.html">multiple</a></dt>
                           <dd>
-                            Позволяет загрузить несколько файлов одновременно.
+                            Թույլ է տալիս միաժամանակ վերբեռնել բազմաթիվ ֆայլեր:
+
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\name.html">name</a></dt>
                           <dd>
-                            Имя поля, предназначено для того, чтобы обработчик
-                            формы мог его идентифицировать.
+                            Դաշտի անվանումն այն ձևակերպողի համար է, որը պետք է ճանաչի այն:
                           </dd>
                           <dt><a href="input\pattern.html">pattern</a></dt>
                           <dd>
-                            Устанавливает шаблон ввода.
+                            Սահմանում է մուտքագրման ձևանմուշը:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt>
                             <a href="input\placeholder.html">placeholder</a>
                           </dt>
                           <dd>
-                            Выводит подсказывающий текст.
+                            Դուրս է բերում հուշող տեքստ
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\readonly.html">readonly</a></dt>
                           <dd>
-                            Устанавливает, что поле не может изменяться
-                            пользователем.
+                            Նշում է, որ օգտագործողը չի կարող փոխել դաշտը:
+
                           </dd>
                           <dt><a href="input\required.html">required</a></dt>
                           <dd>
-                            Обязательное для заполнения поле.
+                            Պարտադիր դաշտ.
+
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\size.html">size</a></dt>
-                          <dd>Ширина текстового поля.</dd>
+                          <dd>Տեքստի վանդակի լայնությունը:</dd>
                           <dt><a href="input\src.html">src</a></dt>
                           <dd>
-                            Адрес графического файла для поля с изображением.
+                            Պատկերի ֆայլի հասցեն պատկերի դաշտի համար:
                           </dd>
                           <dt><a href="input\step.html">step</a></dt>
                           <dd>
-                            Шаг приращения для числовых полей.
+                            Թվային դաշտերի ավելացումը:
                             <span class="attr-HTML5"></span>
                           </dd>
                           <dt><a href="input\type.html">type</a></dt>
                           <dd>
-                            Сообщает браузеру, к какому типу относится элемент
-                            формы.
+                            Բրաուզերին ասում է, թե ինչ տեսակի ձև է:
                           </dd>
                           <dt><a href="input\value.html">value</a></dt>
-                          <dd>Значение элемента.</dd>
+                          <dd>Նյութի արժեքը:</dd>
                         </dl>
                         <p class="more">
-                          Также для этого элемента доступны
-                          <a href="attr\common.html">универсальные атрибуты</a>
-                          и <a href="attr\event.html">события</a>.
+                          Նաև այս տարրի համար հասանելի են հատուկ 
+                          <a href="attr\common.html"> հատկանիշներ</a>
+                          և <a href="attr\event.html">իրադարձություններ</a>:
                         </p>
                       </div>
                     </div>
@@ -389,7 +383,7 @@
                           value=&quot;Очистить&quot;&gt;&lt;/p&gt; &lt;/form&gt;
                           &lt;/body&gt; &lt;/html&gt;</w-example
                         >
-                        <p>Результат данного примера показан на рис. 1.</p>
+                        <p>Այս օրինակի արդյունքը ներկայացված է Նկար 1-ում:</p>
                         <p class="fig">
                           <img
                             src="..\assets\images\html\tag_input_1.png"
@@ -399,7 +393,7 @@
                           />
                         </p>
                         <p class="figsign">
-                          Рис. 1. Вид элементов формы в браузере
+                          Նկար: 1. Ձևի տարրերի դիտում բրաուզերում:
                         </p>
                       </div>
                     </div>
